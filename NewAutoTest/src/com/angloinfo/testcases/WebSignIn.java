@@ -21,6 +21,7 @@ public class WebSignIn {
 	@BeforeTest
 	public void beforeTest(String env) {
 		driver = WebDriverManager.getDriver();
+		driver.manage().window().maximize();
 		febaseurl = UrlManager.getFEbaseurl(env);
 		cmsbaseurl =UrlManager.getCMSbaseurl(env);
 	}	

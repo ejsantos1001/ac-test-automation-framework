@@ -11,6 +11,7 @@
       <class name="com.angloinfo.testcases.ApiAddDirectory"/>
       <class name="com.angloinfo.testcases.ApiRegister"/>
       <class name="com.angloinfo.testcases.DirectoryModeration"/>
+      <class name="com.angloinfo.testcases.SugarOrder"/>
       <class name="com.angloinfo.testcases.WebSignIn"/>
     </classes>
   </test> <!-- Regression1 -->
@@ -33,6 +34,12 @@
           <include name="BeforeTest"/>
         </methods>
       </class> <!-- com.angloinfo.testcases.ApiRegister -->
+      <class name="com.angloinfo.testcases.SugarOrder">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.angloinfo.testcases.SugarOrder -->
       <class name="com.angloinfo.testcases.WebSignIn">
         <methods>
           <include name="beforeTest"/>

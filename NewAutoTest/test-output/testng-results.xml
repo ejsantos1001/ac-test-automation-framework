@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="1" total="6" passed="5">
   <reporter-output>
     <line>
       <![CDATA[succesfull login]]>
     </line>
   </reporter-output>
-  <suite name="AutoTestSuite1" duration-ms="144699" started-at="2016-03-09T12:02:11Z" finished-at="2016-03-09T12:04:35Z">
+  <suite name="AutoTestSuite1" duration-ms="101871" started-at="2016-03-09T13:38:46Z" finished-at="2016-03-09T13:40:28Z">
     <groups>
     </groups>
-    <test name="Regression1" duration-ms="144699" started-at="2016-03-09T12:02:11Z" finished-at="2016-03-09T12:04:35Z">
+    <test name="Regression1" duration-ms="101871" started-at="2016-03-09T13:38:46Z" finished-at="2016-03-09T13:40:28Z">
       <class name="com.angloinfo.testcases.ApiAddDirectory">
-        <test-method status="PASS" signature="BeforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.ApiAddDirectory@33a10788]" name="BeforeTest" is-config="true" duration-ms="7892" started-at="2016-03-09T20:02:11Z" finished-at="2016-03-09T20:02:19Z">
+        <test-method status="PASS" signature="BeforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.ApiAddDirectory@34033bd0]" name="BeforeTest" is-config="true" duration-ms="9583" started-at="2016-03-09T21:38:46Z" finished-at="2016-03-09T21:38:56Z">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="BeforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.ApiRegister@7006c658]" name="BeforeTest" is-config="true" duration-ms="1803" started-at="2016-03-09T20:02:19Z" finished-at="2016-03-09T20:02:20Z">
+        <test-method status="PASS" signature="BeforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.ApiRegister@47fd17e3]" name="BeforeTest" is-config="true" duration-ms="1858" started-at="2016-03-09T21:38:56Z" finished-at="2016-03-09T21:38:58Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@34033bd0]" name="beforeTest" is-config="true" duration-ms="9452" started-at="2016-03-09T20:02:20Z" finished-at="2016-03-09T20:02:30Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@7cdbc5d3]" name="beforeTest" is-config="true" duration-ms="13784" started-at="2016-03-09T21:38:58Z" finished-at="2016-03-09T21:39:11Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.WebSignIn@47fd17e3]" name="beforeTest" is-config="true" duration-ms="7613" started-at="2016-03-09T20:02:30Z" finished-at="2016-03-09T20:02:37Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.angloinfo.testcases.SugarOrder@3aa9e816]" name="beforeTest" is-config="true" duration-ms="1" started-at="2016-03-09T21:39:11Z" finished-at="2016-03-09T21:39:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.WebSignIn@17d99928]" name="beforeTest" is-config="true" duration-ms="12042" started-at="2016-03-09T21:39:11Z" finished-at="2016-03-09T21:39:24Z">
           <params>
             <param index="0">
               <value>
@@ -54,11 +58,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="addDirectory(com.angloinfo.data.DirectoryListing)[pri:0, instance:com.angloinfo.testcases.ApiAddDirectory@33a10788]" name="addDirectory" duration-ms="2028" started-at="2016-03-09T20:02:38Z" data-provider="dp2" finished-at="2016-03-09T20:02:40Z">
+        <test-method status="FAIL" signature="addDirectory(com.angloinfo.data.DirectoryListing)[pri:0, instance:com.angloinfo.testcases.ApiAddDirectory@34033bd0]" name="addDirectory" duration-ms="2236" started-at="2016-03-09T21:39:24Z" data-provider="dp2" finished-at="2016-03-09T21:39:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.angloinfo.data.DirectoryListing@60e5272]]>
+                <![CDATA[com.angloinfo.data.DirectoryListing@173373b4]]>
               </value>
             </param>
           </params>
@@ -129,7 +133,7 @@ Expected status code <200> doesn't match actual status code <404>.
         </test-method> <!-- addDirectory -->
       </class> <!-- com.angloinfo.testcases.ApiAddDirectory -->
       <class name="com.angloinfo.testcases.WebSignIn">
-        <test-method status="PASS" signature="signInViaEmail()[pri:0, instance:com.angloinfo.testcases.WebSignIn@47fd17e3]" name="signInViaEmail" duration-ms="104192" started-at="2016-03-09T20:02:51Z" finished-at="2016-03-09T20:04:35Z">
+        <test-method status="PASS" signature="signInViaEmail()[pri:0, instance:com.angloinfo.testcases.WebSignIn@17d99928]" name="signInViaEmail" duration-ms="48201" started-at="2016-03-09T21:39:40Z" finished-at="2016-03-09T21:40:28Z">
           <reporter-output>
             <line>
               <![CDATA[succesfull login]]>
@@ -138,11 +142,11 @@ Expected status code <200> doesn't match actual status code <404>.
         </test-method> <!-- signInViaEmail -->
       </class> <!-- com.angloinfo.testcases.WebSignIn -->
       <class name="com.angloinfo.testcases.ApiRegister">
-        <test-method status="PASS" signature="registerUserViaApi(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testcases.ApiRegister@7006c658]" name="registerUserViaApi" duration-ms="3782" started-at="2016-03-09T20:02:40Z" data-provider="dp" finished-at="2016-03-09T20:02:43Z">
+        <test-method status="PASS" signature="registerUserViaApi(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testcases.ApiRegister@47fd17e3]" name="registerUserViaApi" duration-ms="4529" started-at="2016-03-09T21:39:26Z" data-provider="dp" finished-at="2016-03-09T21:39:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.angloinfo.data.Member@6c298dc]]>
+                <![CDATA[com.angloinfo.data.Member@796065aa]]>
               </value>
             </param>
           </params>
@@ -151,11 +155,49 @@ Expected status code <200> doesn't match actual status code <404>.
         </test-method> <!-- registerUserViaApi -->
       </class> <!-- com.angloinfo.testcases.ApiRegister -->
       <class name="com.angloinfo.testcases.DirectoryModeration">
-        <test-method status="PASS" signature="cmsLogin()[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@34033bd0]" name="cmsLogin" duration-ms="7774" started-at="2016-03-09T20:02:43Z" finished-at="2016-03-09T20:02:51Z">
+        <test-method status="PASS" signature="cmsLogin()[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@7cdbc5d3]" name="cmsLogin" duration-ms="9466" started-at="2016-03-09T21:39:30Z" finished-at="2016-03-09T21:39:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cmsLogin -->
       </class> <!-- com.angloinfo.testcases.DirectoryModeration -->
+      <class name="com.angloinfo.testcases.SugarOrder">
+        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:com.angloinfo.testcases.SugarOrder@3aa9e816]" name="f" duration-ms="8" started-at="2016-03-09T21:39:40Z" data-provider="dp" finished-at="2016-03-09T21:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.lang.Integer, java.lang.String)[pri:0, instance:com.angloinfo.testcases.SugarOrder@3aa9e816]" name="f" duration-ms="10" started-at="2016-03-09T21:39:40Z" data-provider="dp" finished-at="2016-03-09T21:39:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testcases.SugarOrder@3aa9e816]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-03-09T21:40:28Z" finished-at="2016-03-09T21:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.angloinfo.testcases.SugarOrder -->
     </test> <!-- Regression1 -->
   </suite> <!-- AutoTestSuite1 -->
 </testng-results>
