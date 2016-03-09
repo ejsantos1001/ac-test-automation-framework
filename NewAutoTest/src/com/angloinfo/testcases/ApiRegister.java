@@ -16,7 +16,7 @@ public class ApiRegister {
   @Parameters({"environment"})
   @BeforeTest
   public void BeforeTest(String environment) {
-	 apibaseurl =  urlManager.getAPIbaseurl(environment);
+	 apibaseurl =  UrlManager.getAPIbaseurl(environment);
 	 accesstoken = AuthManager.getAccessToken(apibaseurl);
   }
   

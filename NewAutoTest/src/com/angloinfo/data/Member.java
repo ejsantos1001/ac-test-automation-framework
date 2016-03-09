@@ -16,7 +16,7 @@ public class Member {
 		
 		public Member() {
 		
-			int serial = minMaxRandom.generate(9999,1);
+			int serial = MinMaxRandom.generate(9999,1);
 			
 			setFirstname("afirst" + Integer.toString(serial));
 			setLastname("alast" + Integer.toString(serial));

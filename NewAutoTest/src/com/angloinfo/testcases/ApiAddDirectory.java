@@ -9,16 +9,16 @@ import org.testng.annotations.Test;
 
 import com.angloinfo.data.DirectoryListing;
 import com.angloinfo.tools.AuthManager;
-import com.angloinfo.tools.urlManager;
+import com.angloinfo.tools.UrlManager;
 
 public class ApiAddDirectory {
 	 String apibaseurl;
 	 String accesstoken;
 	
-	 @Parameters({"environment"})
+	  @Parameters({"environment"})
 	  @BeforeTest
 	  public void BeforeTest(String environment) {
-		 apibaseurl =  urlManager.getAPIbaseurl(environment);
+		 apibaseurl =  UrlManager.getAPIbaseurl(environment);
 		 accesstoken = AuthManager.getAccessToken(apibaseurl);
 	  }
 	    

@@ -1,6 +1,6 @@
 package com.angloinfo.tools;
 
-public class urlManager {
+public class UrlManager {
 	
 	
 	public static String getFEbaseurl(String env)    {

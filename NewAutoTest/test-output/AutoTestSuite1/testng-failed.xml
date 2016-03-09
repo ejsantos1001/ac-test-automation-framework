@@ -10,17 +10,19 @@
     <classes>
       <class name="com.angloinfo.testcases.ApiAddDirectory"/>
       <class name="com.angloinfo.testcases.ApiRegister"/>
+      <class name="com.angloinfo.testcases.DirectoryModeration"/>
       <class name="com.angloinfo.testcases.WebSignIn"/>
     </classes>
   </test> <!-- Regression1 -->
   <test name="Regression1(failed)">
     <parameter name="environment" value="stg"/>
     <classes>
-      <class name="com.angloinfo.testcases.WebSignIn">
+      <class name="com.angloinfo.testcases.DirectoryModeration">
         <methods>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.angloinfo.testcases.WebSignIn -->
+      </class> <!-- com.angloinfo.testcases.DirectoryModeration -->
       <class name="com.angloinfo.testcases.ApiAddDirectory">
         <methods>
           <include name="BeforeTest"/>
@@ -32,6 +34,11 @@
           <include name="BeforeTest"/>
         </methods>
       </class> <!-- com.angloinfo.testcases.ApiRegister -->
+      <class name="com.angloinfo.testcases.WebSignIn">
+        <methods>
+          <include name="signInViaEmail"/>
+        </methods>
+      </class> <!-- com.angloinfo.testcases.WebSignIn -->
     </classes>
   </test> <!-- Regression1(failed) -->
 </suite> <!-- Failed suite [AutoTestSuite1] -->

@@ -1,6 +1,7 @@
 package com.angloinfo.data;
 
-import com.angloinfo.tools.minMaxRandom;
+import com.angloinfo.tools.MinMaxRandom;
+
 
 public class DirectoryListing {
 		private String location;
@@ -16,7 +17,7 @@ public class DirectoryListing {
 		private String contact_website;
 		
 				public DirectoryListing() {
-					int serial = minMaxRandom.generate(9999, 1);
+					int serial = MinMaxRandom.generate(9999, 1);
 					setLocation("algrave");
 					setCategory_id("15039");
 					setName("ainfo"+ serial);
