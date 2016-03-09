@@ -19,7 +19,6 @@
     <classes>
       <class name="com.angloinfo.testcases.DirectoryModeration">
         <methods>
-          <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- com.angloinfo.testcases.DirectoryModeration -->
@@ -36,7 +35,7 @@
       </class> <!-- com.angloinfo.testcases.ApiRegister -->
       <class name="com.angloinfo.testcases.WebSignIn">
         <methods>
-          <include name="signInViaEmail"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- com.angloinfo.testcases.WebSignIn -->
     </classes>
