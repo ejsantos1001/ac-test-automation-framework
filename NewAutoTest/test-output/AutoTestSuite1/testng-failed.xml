@@ -4,47 +4,8 @@
   <parameter name="environment" value="stg"/>
   <test name="Regression1">
     <parameter name="environment" value="stg"/>
-    <packages>
-      <package name="com.angloinfo.testcases"/>
-    </packages>
     <classes>
-      <class name="com.angloinfo.testcases.ApiAddDirectory"/>
-      <class name="com.angloinfo.testcases.ApiRegister"/>
       <class name="com.angloinfo.testcases.DirectoryModeration"/>
-      <class name="com.angloinfo.testcases.SugarOrder"/>
-      <class name="com.angloinfo.testcases.WebSignIn"/>
     </classes>
   </test> <!-- Regression1 -->
-  <test name="Regression1(failed)">
-    <parameter name="environment" value="stg"/>
-    <classes>
-      <class name="com.angloinfo.testcases.DirectoryModeration">
-        <methods>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.angloinfo.testcases.DirectoryModeration -->
-      <class name="com.angloinfo.testcases.ApiAddDirectory">
-        <methods>
-          <include name="BeforeTest"/>
-          <include name="addDirectory" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.angloinfo.testcases.ApiAddDirectory -->
-      <class name="com.angloinfo.testcases.ApiRegister">
-        <methods>
-          <include name="BeforeTest"/>
-        </methods>
-      </class> <!-- com.angloinfo.testcases.ApiRegister -->
-      <class name="com.angloinfo.testcases.SugarOrder">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.angloinfo.testcases.SugarOrder -->
-      <class name="com.angloinfo.testcases.WebSignIn">
-        <methods>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.angloinfo.testcases.WebSignIn -->
-    </classes>
-  </test> <!-- Regression1(failed) -->
 </suite> <!-- Failed suite [AutoTestSuite1] -->

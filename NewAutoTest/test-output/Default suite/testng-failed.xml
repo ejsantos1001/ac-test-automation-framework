@@ -4,17 +4,17 @@
   <parameter name="environment" value="stg"/>
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.angloinfo.testcases.ApiRegister"/>
+      <class name="com.angloinfo.testcases.DirectoryModeration"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.angloinfo.testcases.ApiRegister">
+      <class name="com.angloinfo.testcases.DirectoryModeration">
         <methods>
-          <include name="registerUserViaApi" invocation-numbers="0"/>
-          <include name="BeforeTest"/>
+          <include name="cmsDirectoryModeration"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.angloinfo.testcases.ApiRegister -->
+      </class> <!-- com.angloinfo.testcases.DirectoryModeration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

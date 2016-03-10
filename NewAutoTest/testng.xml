@@ -2,8 +2,8 @@
 <suite name="AutoTestSuite1" verbose ="1">
 	<test name="Regression1">
 	<parameter name ="environment" value ="stg"/>
-		<packages>
-			<package name ="com.angloinfo.testcases"/>
-		</packages>
+		<classes>
+			<class name ="com.angloinfo.testcases.DirectoryModeration"/>
+		</classes>
 	</test>
 </suite>
