@@ -7,14 +7,4 @@
       <class name="com.angloinfo.testcases.DirectoryModeration"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.angloinfo.testcases.DirectoryModeration">
-        <methods>
-          <include name="cmsDirectoryModeration"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- com.angloinfo.testcases.DirectoryModeration -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

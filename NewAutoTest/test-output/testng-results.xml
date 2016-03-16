@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="AutoTestSuite1" duration-ms="19089" started-at="2016-03-10T08:41:38Z" finished-at="2016-03-10T08:41:57Z">
+  <suite name="AutoTestSuite1" duration-ms="37031" started-at="2016-03-16T16:27:12Z" finished-at="2016-03-16T16:27:49Z">
     <groups>
     </groups>
-    <test name="Regression1" duration-ms="19089" started-at="2016-03-10T08:41:38Z" finished-at="2016-03-10T08:41:57Z">
+    <test name="Regression1" duration-ms="37031" started-at="2016-03-16T16:27:12Z" finished-at="2016-03-16T16:27:49Z">
       <class name="com.angloinfo.testcases.DirectoryModeration">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@5474c6c]" name="beforeTest" is-config="true" duration-ms="8947" started-at="2016-03-10T16:41:38Z" finished-at="2016-03-10T16:41:47Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@591f989e]" name="beforeTest" is-config="true" duration-ms="4782" started-at="2016-03-17T00:27:12Z" finished-at="2016-03-17T00:27:17Z">
           <params>
             <param index="0">
               <value>
@@ -18,10 +18,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="cmsDirectoryModeration()[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@5474c6c]" name="cmsDirectoryModeration" duration-ms="10092" started-at="2016-03-10T16:41:47Z" finished-at="2016-03-10T16:41:57Z">
+        <test-method status="PASS" signature="addDirectoryViaCMS(com.angloinfo.data.DirectoryListing)[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@591f989e]" name="addDirectoryViaCMS" duration-ms="31924" started-at="2016-03-17T00:27:17Z" data-provider="dp" finished-at="2016-03-17T00:27:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.angloinfo.data.DirectoryListing@4d15107f]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cmsDirectoryModeration -->
+        </test-method> <!-- addDirectoryViaCMS -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testcases.DirectoryModeration@591f989e]" name="afterTest" is-config="true" duration-ms="285" started-at="2016-03-17T00:27:49Z" finished-at="2016-03-17T00:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- com.angloinfo.testcases.DirectoryModeration -->
     </test> <!-- Regression1 -->
   </suite> <!-- AutoTestSuite1 -->
