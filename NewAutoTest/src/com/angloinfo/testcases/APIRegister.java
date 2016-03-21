@@ -8,7 +8,7 @@ import static com.jayway.restassured.RestAssured.*;
 import com.angloinfo.data.Member;
 import com.angloinfo.tools.*;
 
-public class ApiRegister {
+public class APIRegister {
  
   private static String accesstoken;	
   private String apibaseurl;
