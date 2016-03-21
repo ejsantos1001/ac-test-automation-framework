@@ -24,7 +24,7 @@ public class ApiAddDirectory {
 	    
 	  @Test(dataProvider= "dp2" )
 	  public void addDirectory(DirectoryListing DirListing) {
-		   given().
+		given().
 	  		auth().oauth2(accesstoken).
 	  		queryParam("location",DirListing.getLocation()).
 	 		queryParam("category_id",DirListing.getCategory_id()).

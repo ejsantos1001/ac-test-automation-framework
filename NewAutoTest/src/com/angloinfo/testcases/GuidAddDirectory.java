@@ -18,7 +18,7 @@ import com.angloinfo.tools.WebDriverManager;
 import com.angloinfo.tools.UrlManager;
 
 
-public class DirectoryModeration {
+public class GuidAddDirectory {
 	
 	 String febaseurl;
 	 String cmsbaseurl;
@@ -67,10 +67,4 @@ public class DirectoryModeration {
 		driver.close();
 		driver.quit();
 	}
-	
-	
-	
-	
-	
-
 }

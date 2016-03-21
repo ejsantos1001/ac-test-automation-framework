@@ -21,7 +21,7 @@ public class ApiRegister {
   }
   
 
-  @Test(dataProvider = "dp" , threadPoolSize=40 , invocationCount = 40 , timeOut=10000)
+  @Test(dataProvider = "dp" , threadPoolSize=1 , invocationCount = 1 , timeOut=10000)
   public void registerUserViaApi(Member regMember) {
 	   given().
 	   		auth().oauth2(accesstoken).

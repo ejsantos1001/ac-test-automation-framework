@@ -10,23 +10,34 @@ import com.angloinfo.tools.TimingTools;
 
 
 public class CmsManageDirectoryPage {
+	
 	String route = "/directory" ;
+	WebDriver driver;
 	WebElement  locationswitcher;
 	WebElement  locationselection;
 	WebElement  contentbutton;
 	WebElement  directoryselection;
-	WebElement  category;
-	WebElement  subcategory;
-	WebElement  addlistingbutton;
-	WebElement  directorynamefield;
-	WebElement  slugbutton;
+	WebElement  category; 
+	WebElement  subcategory; 
+	WebElement  addlistingbutton; 
+	WebElement  directorynamefield ;
 	WebElement  contentfield1;
-	WebElement  savechangesbutton;
-	WebDriver driver;
+	WebElement  savechangesbutton ;
+	WebElement  slugbutton;
+	
+	
 
+	
 	
 		public CmsManageDirectoryPage(WebDriver driver) {	
 			this.driver = driver;
+			
+			
+			
+			
+			
+			
+			
 		}
 		
 		public void  goToPage(String baseurl) {
@@ -35,23 +46,24 @@ public class CmsManageDirectoryPage {
 	
 		public void addDirectoryListing(DirectoryListing dl) {
 
+			
 			TimingTools.defeatSpinner(driver);
-			category = driver.findElement(By.xpath("//ul[@id='children-of-0']/li/a/span[2]"));
-			category.click();
-			subcategory = driver.findElement(By.xpath("//ul[@id='children-of-14927']/li/a/span[3]"));
-			subcategory.click();
+			this.category = driver.findElement(By.xpath("//ul[@id='children-of-0']/li/a/span[2]"));
+			this.category.click();
+			this.subcategory = driver.findElement(By.xpath("//ul[@id='children-of-14927']/li/a/span[3]"));
+			this.subcategory.click();
 			TimingTools.defeatSpinner(driver);
-			addlistingbutton = driver.findElement(By.xpath("//th[6]/span/button"));
-			addlistingbutton.click();
-			directorynamefield = driver.findElement(By.xpath(".//*[@id='name']"));
-			directorynamefield.clear();
-			directorynamefield.sendKeys(dl.getName());
-			slugbutton = driver.findElement(By.xpath(".//*[@id='listing-detail-form']/div[2]/div/div[1]/span[2]/button"));
-			slugbutton.click();
-			contentfield1 = driver.findElement(By.xpath(".//*[@id='listing_html_editor']/div[2]/div[4]/div[4]"));
-			contentfield1.sendKeys(dl.getDescription());
-			savechangesbutton = driver.findElement(By.xpath(".//*[@id='ai-content']/div/div[1]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div[2]/center/button"));
-			savechangesbutton.click();
+			this.addlistingbutton = driver.findElement(By.xpath("//th[6]/span/button"));
+			this.addlistingbutton.click();
+			this.directorynamefield = driver.findElement(By.xpath(".//*[@id='name']"));
+			this.directorynamefield.clear();
+			this.directorynamefield.sendKeys(dl.getName());
+			this.slugbutton = driver.findElement(By.xpath(".//*[@id='listing-detail-form']/div[2]/div/div[1]/span[2]/button"));
+			this.slugbutton.click();
+			this.contentfield1 = driver.findElement(By.xpath(".//*[@id='listing_html_editor']/div[2]/div[4]/div[4]"));
+			this.contentfield1.sendKeys(dl.getDescription());
+			this.savechangesbutton = driver.findElement(By.xpath(".//*[@id='ai-content']/div/div[1]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div[2]/center/button"));
+			this.savechangesbutton.click();
 		}
 	
 }
