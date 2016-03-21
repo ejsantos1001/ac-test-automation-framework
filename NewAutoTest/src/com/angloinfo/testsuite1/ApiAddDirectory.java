@@ -1,4 +1,4 @@
-package com.angloinfo.testcases;
+package com.angloinfo.testsuite1;
 
 import static com.jayway.restassured.RestAssured.given;
 

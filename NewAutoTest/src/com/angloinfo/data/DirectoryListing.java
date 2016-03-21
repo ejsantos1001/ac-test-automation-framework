@@ -18,17 +18,17 @@ public class DirectoryListing {
 		
 				public DirectoryListing() {
 					int serial = MinMaxRandom.generate(9999, 1);
-					setLocation("algrave");
-					setCategory_id("15039");
+					setLocation("algarve");
+					setCategory_id("AVMK1yGdt2NE0jDvivW1");
 					setName("ainfo"+ serial);
 					setDescription("desc" + serial);
 					setAddress("address" +serial);
-					setLongtitude(0);
-					setLatitude(0);
+					setLongtitude((float) 25.25);
+					setLatitude((float) 55.33);
 					setContact_number("777");
 					setContact_email("ainfo" + serial + "@gmail.com");
 					setContact_website("www" + serial + ".com");
-					setParent_id("null");
+					//setParent_id("null");
 					
 					
 				}

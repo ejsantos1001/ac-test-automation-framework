@@ -18,7 +18,7 @@ import com.angloinfo.tools.WebDriverManager;
 import com.angloinfo.tools.UrlManager;
 
 
-public class GuidAddDirectory {
+public class GUIAddDirectory {
 	
 	 String febaseurl;
 	 String cmsbaseurl;
@@ -48,6 +48,7 @@ public class GuidAddDirectory {
 		CmsManageDirectoryPage CmsManageDirectoryPage1 = new CmsManageDirectoryPage(driver);
 		CmsManageDirectoryPage1.goToPage(cmsbaseurl);
 		CmsManageDirectoryPage1.addDirectoryListing(dl);
+		
 		
 	}
 	

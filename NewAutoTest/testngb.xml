@@ -3,7 +3,7 @@
 	<test name="Regression1">
 	<parameter name ="environment" value ="stg"/>
 		<classes>
-			<class name ="com.angloinfo.testcases.WebSignIn"/>
+			<class name ="com.angloinfo.testcases.ApiAddDirectory"/>
 		</classes>
 	</test>
 </suite>

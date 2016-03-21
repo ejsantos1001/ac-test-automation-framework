@@ -1,4 +1,4 @@
-package com.angloinfo.testcases;
+package com.angloinfo.testsuite1;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;

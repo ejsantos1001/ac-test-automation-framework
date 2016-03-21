@@ -10,7 +10,7 @@ import com.angloinfo.tools.WebDriverManager;
 import com.angloinfo.pageobjects.LoginPage;
 import com.angloinfo.tools.UrlManager;
 
-public class WebSignIn {
+public class GUIWebSignIn {
 	 String febaseurl;
 	 String cmsbaseurl;
 	 String accesstoken;
