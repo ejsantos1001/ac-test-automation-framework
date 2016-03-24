@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[succesfull login]]>
     </line>
   </reporter-output>
-  <suite name="AutoTestSuite1" duration-ms="108823" started-at="2016-03-21T11:01:20Z" finished-at="2016-03-21T11:03:08Z">
+  <suite name="AutoTestSuite1" duration-ms="117574" started-at="2016-03-24T13:54:57Z" finished-at="2016-03-24T13:56:54Z">
     <groups>
     </groups>
-    <test name="Regression1" duration-ms="108823" started-at="2016-03-21T11:01:20Z" finished-at="2016-03-21T11:03:08Z">
-      <class name="com.angloinfo.testcases.ApiRegister">
-        <test-method status="PASS" signature="BeforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.ApiRegister@28864e92]" name="BeforeTest" is-config="true" duration-ms="10518" started-at="2016-03-21T19:01:20Z" finished-at="2016-03-21T19:01:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[stg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.GUIAddDirectory@6ea6d14e]" name="beforeTest" is-config="true" duration-ms="12002" started-at="2016-03-21T19:01:30Z" finished-at="2016-03-21T19:01:42Z">
+    <test name="Regression1" duration-ms="117574" started-at="2016-03-24T13:54:57Z" finished-at="2016-03-24T13:56:54Z">
+      <class name="com.angloinfo.testcases.TestSuiteA">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.TestSuiteA@34340fab]" name="beforeTest" is-config="true" duration-ms="13599" started-at="2016-03-24T21:54:57Z" finished-at="2016-03-24T21:55:10Z">
           <params>
             <param index="0">
               <value>
@@ -32,55 +21,44 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.WebSignIn@6ad5c04e]" name="beforeTest" is-config="true" duration-ms="7383" started-at="2016-03-21T19:01:42Z" finished-at="2016-03-21T19:01:49Z">
+        <test-method status="PASS" signature="addDirectoryViaCMS(com.angloinfo.data.DirectoryListing)[pri:0, instance:com.angloinfo.testcases.TestSuiteA@34340fab]" name="addDirectoryViaCMS" duration-ms="28467" started-at="2016-03-24T21:55:10Z" data-provider="dp" finished-at="2016-03-24T21:55:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[stg]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="registerUserViaApi(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testcases.ApiRegister@28864e92]" name="registerUserViaApi" duration-ms="4907" started-at="2016-03-21T19:01:50Z" data-provider="dp" finished-at="2016-03-21T19:01:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.angloinfo.data.Member@55cff952]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUserViaApi -->
-      </class> <!-- com.angloinfo.testcases.ApiRegister -->
-      <class name="com.angloinfo.testcases.WebSignIn">
-        <test-method status="PASS" signature="signInViaEmail()[pri:0, instance:com.angloinfo.testcases.WebSignIn@6ad5c04e]" name="signInViaEmail" duration-ms="32495" started-at="2016-03-21T19:02:35Z" finished-at="2016-03-21T19:03:08Z">
-          <reporter-output>
-            <line>
-              <![CDATA[succesfull login]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- signInViaEmail -->
-      </class> <!-- com.angloinfo.testcases.WebSignIn -->
-      <class name="com.angloinfo.testcases.GUIAddDirectory">
-        <test-method status="PASS" signature="addDirectoryViaCMS(com.angloinfo.data.DirectoryListing)[pri:0, instance:com.angloinfo.testcases.GUIAddDirectory@6ea6d14e]" name="addDirectoryViaCMS" duration-ms="40674" started-at="2016-03-21T19:01:55Z" data-provider="dp" finished-at="2016-03-21T19:02:35Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.angloinfo.data.DirectoryListing@6a10b263]]>
+                <![CDATA[com.angloinfo.data.DirectoryListing@66e889df]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addDirectoryViaCMS -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testcases.GUIAddDirectory@6ea6d14e]" name="afterTest" is-config="true" duration-ms="591" started-at="2016-03-21T19:03:08Z" finished-at="2016-03-21T19:03:08Z">
+        <test-method status="PASS" signature="registerUserViaApi(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testcases.TestSuiteA@34340fab]" name="registerUserViaApi" duration-ms="5211" started-at="2016-03-24T21:55:39Z" data-provider="dp2" finished-at="2016-03-24T21:55:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.angloinfo.data.Member@16c8b7bd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserViaApi -->
+        <test-method status="PASS" signature="signInViaEmail()[pri:0, instance:com.angloinfo.testcases.TestSuiteA@34340fab]" name="signInViaEmail" duration-ms="49603" started-at="2016-03-24T21:55:44Z" finished-at="2016-03-24T21:56:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[succesfull login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signInViaEmail -->
+        <test-method status="PASS" signature="testLocationSwitcher()[pri:0, instance:com.angloinfo.testcases.TestSuiteA@34340fab]" name="testLocationSwitcher" duration-ms="12601" started-at="2016-03-24T21:56:34Z" finished-at="2016-03-24T21:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLocationSwitcher -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testcases.TestSuiteA@34340fab]" name="afterTest" is-config="true" duration-ms="7999" started-at="2016-03-24T21:56:46Z" finished-at="2016-03-24T21:56:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.angloinfo.testcases.GUIAddDirectory -->
+      </class> <!-- com.angloinfo.testcases.TestSuiteA -->
     </test> <!-- Regression1 -->
   </suite> <!-- AutoTestSuite1 -->
 </testng-results>

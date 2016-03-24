@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="AutoTestSuite1" verbose ="1">
-	<test name="Regression1">
-	<parameter name ="environment" value ="stg"/>
-		<packages>
-			<package name ="com.angloinfo.testcases"/>
-		</packages>
-	</test>
-</suite>

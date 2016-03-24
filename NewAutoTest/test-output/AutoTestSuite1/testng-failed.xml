@@ -4,13 +4,8 @@
   <parameter name="environment" value="stg"/>
   <test name="Regression1">
     <parameter name="environment" value="stg"/>
-    <packages>
-      <package name="com.angloinfo.testcases"/>
-    </packages>
     <classes>
-      <class name="com.angloinfo.testcases.ApiRegister"/>
-      <class name="com.angloinfo.testcases.GUIAddDirectory"/>
-      <class name="com.angloinfo.testcases.WebSignIn"/>
+      <class name="com.angloinfo.testcases.TestSuiteA"/>
     </classes>
   </test> <!-- Regression1 -->
 </suite> <!-- Failed suite [AutoTestSuite1] -->

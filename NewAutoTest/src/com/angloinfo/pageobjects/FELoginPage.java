@@ -4,14 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage {
+public class FELoginPage {
 	String route = "/member/signin";
 	WebDriver driver;
 	WebElement emailfield;
 	WebElement passwordfield;
 	WebElement loginbutton;
 	
-	public LoginPage(WebDriver driver) {
+	public FELoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	

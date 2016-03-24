@@ -9,7 +9,7 @@ import com.angloinfo.data.DirectoryListing;
 import com.angloinfo.tools.TimingTools;
 
 
-public class CmsManageDirectoryPage {
+public class CMSDirectorySubSection {
 	
 	String route = "/directory" ;
 	WebDriver driver;
@@ -29,14 +29,8 @@ public class CmsManageDirectoryPage {
 
 	
 	
-		public CmsManageDirectoryPage(WebDriver driver) {	
+		public CMSDirectorySubSection(WebDriver driver) {	
 			this.driver = driver;
-			
-			
-			
-			
-			
-			
 			
 		}
 		

@@ -15,8 +15,7 @@ public class CMSLoginPage {
 	WebElement emailfield; 
 	WebElement passwordfield;
 	WebElement loginbutton;
-	WebElement locationswitcher; 
-	WebElement locationselection;
+
 	
 	public CMSLoginPage(WebDriver driver){
 		this.driver = driver;	
@@ -42,17 +41,7 @@ public class CMSLoginPage {
 	}
 	
 	
-	public void switchLocation() {
 	
-		TimingTools.defeatSpinner(driver);
-		Actions actions = new Actions(driver);
-		locationswitcher = driver.findElement(By.xpath("//a[contains(text(),'global')]"));
-		actions.moveToElement(locationswitcher).click().perform();
-		locationselection = driver.findElement(By.xpath("//a[contains(text(),'Algarve')]"));
-		locationselection.click();
-		TimingTools.defeatSpinner(driver);
-		
-	}
 	
 }
 
