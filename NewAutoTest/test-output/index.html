@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-AutoTestSuite1">
-              <span class="suite-name border-passed">AutoTestSuite1</span>
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-AutoTestSuite1">
-                    <span>testng.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-AutoTestSuite1">
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-AutoTestSuite1">
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-AutoTestSuite1">
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-AutoTestSuite1">
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-AutoTestSuite1">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-AutoTestSuite1">
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,36 +91,50 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="testLowerFooterLinks">testLowerFooterLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-AutoTestSuite1" class="hide-methods passed suite-AutoTestSuite1"> (hide)</a> <!-- hide-methods passed suite-AutoTestSuite1 -->
-                      <a href="#" panel-name="suite-AutoTestSuite1" class="show-methods passed suite-AutoTestSuite1"> (show)</a> <!-- show-methods passed suite-AutoTestSuite1 -->
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-AutoTestSuite1">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="addDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df)">addDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="testAddingDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df)">testAddingDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="registerUserViaApi(com.angloinfo.data.Member@16c8b7bd)">registerUserViaApi(com.angloinfo.data.Member@16c8b7bd)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="testLocationSwitcher">testLocationSwitcher</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="signInViaEmail">signInViaEmail</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="testRegisterUserViaApi(com.angloinfo.data.Member@36bed37a)">testRegisterUserViaApi(com.angloinfo.data.Member@36bed37a)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="testLocationSwitcher">testLocationSwitcher</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.angloinfo.testcases.TestSuiteA" hash-for-method="testSignInViaEmail">testSignInViaEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-AutoTestSuite1 -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -131,8 +145,80 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-AutoTestSuite1" class="panel AutoTestSuite1">
-          <div class="suite-AutoTestSuite1-class-passed">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.angloinfo.testcases.TestSuiteA</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLowerFooterLinks">
+                  </a> <!-- testLowerFooterLinks -->
+                  <span class="method-name">testLowerFooterLinks</span>
+                  <div class="stack-trace">com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: 404 Not Found for https://stgcms.angloinfo.com//sponsor/?append_id=sponsor-box-widget
+	at com.gargoylesoftware.htmlunit.WebClient.throwFailingHttpStatusCodeExceptionIfNecessary(WebClient.java:535)
+	at com.gargoylesoftware.htmlunit.html.HtmlPage.loadJavaScriptFromUrl(HtmlPage.java:1076)
+	at com.gargoylesoftware.htmlunit.html.HtmlPage.loadExternalJavaScriptFile(HtmlPage.java:1009)
+	at com.gargoylesoftware.htmlunit.html.HtmlScript.executeScriptIfNeeded(HtmlScript.java:395)
+	at com.gargoylesoftware.htmlunit.html.HtmlScript$3.execute(HtmlScript.java:270)
+	at com.gargoylesoftware.htmlunit.html.HtmlScript.onAllChildrenAddedToPage(HtmlScript.java:290)
+	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.endElement(HTMLParser.java:800)
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
+	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.endElement(HTMLParser.java:757)
+	at org.cyberneko.html.HTMLTagBalancer.callEndElement(HTMLTagBalancer.java:1170)
+	at org.cyberneko.html.HTMLTagBalancer.endElement(HTMLTagBalancer.java:1072)
+	at org.cyberneko.html.filters.DefaultFilter.endElement(DefaultFilter.java:206)
+	at org.cyberneko.html.filters.NamespaceBinder.endElement(NamespaceBinder.java:330)
+	at org.cyberneko.html.HTMLScanner$ContentScanner.scanEndElement(HTMLScanner.java:3126)
+	at org.cyberneko.html.HTMLScanner$ContentScanner.scan(HTMLScanner.java:2093)
+	at org.cyberneko.html.HTMLScanner.scanDocument(HTMLScanner.java:920)
+	at org.cyberneko.html.HTMLConfiguration.parse(HTMLConfiguration.java:499)
+	at org.cyberneko.html.HTMLConfiguration.parse(HTMLConfiguration.java:452)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.parse(HTMLParser.java:1040)
+	at com.gargoylesoftware.htmlunit.html.HTMLParser.parse(HTMLParser.java:253)
+	at com.gargoylesoftware.htmlunit.html.HTMLParser.parseHtml(HTMLParser.java:199)
+	at com.gargoylesoftware.htmlunit.DefaultPageCreator.createHtmlPage(DefaultPageCreator.java:272)
+	at com.gargoylesoftware.htmlunit.DefaultPageCreator.createPage(DefaultPageCreator.java:160)
+	at com.gargoylesoftware.htmlunit.WebClient.loadWebResponseInto(WebClient.java:476)
+	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:350)
+	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:415)
+	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:400)
+	at com.angloinfo.tools.HtmlUnitTools.getResponseCode(HtmlUnitTools.java:12)
+	at com.angloinfo.testcases.TestSuiteA.testLowerFooterLinks(TestSuiteA.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.angloinfo.testcases.TestSuiteA</span>
@@ -140,25 +226,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df)">
-                  </a> <!-- addDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df) -->
-                  <span class="method-name">addDirectoryViaCMS</span>
+                  <a name="testAddingDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df)">
+                  </a> <!-- testAddingDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df) -->
+                  <span class="method-name">testAddingDirectoryViaCMS</span>
                   <span class="parameters">(com.angloinfo.data.DirectoryListing@66e889df)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registerUserViaApi(com.angloinfo.data.Member@16c8b7bd)">
-                  </a> <!-- registerUserViaApi(com.angloinfo.data.Member@16c8b7bd) -->
-                  <span class="method-name">registerUserViaApi</span>
-                  <span class="parameters">(com.angloinfo.data.Member@16c8b7bd)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signInViaEmail">
-                  </a> <!-- signInViaEmail -->
-                  <span class="method-name">signInViaEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -168,109 +239,128 @@
                   <span class="method-name">testLocationSwitcher</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterUserViaApi(com.angloinfo.data.Member@36bed37a)">
+                  </a> <!-- testRegisterUserViaApi(com.angloinfo.data.Member@36bed37a) -->
+                  <span class="method-name">testRegisterUserViaApi</span>
+                  <span class="parameters">(com.angloinfo.data.Member@36bed37a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInViaEmail">
+                  </a> <!-- testSignInViaEmail -->
+                  <span class="method-name">testSignInViaEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AutoTestSuite1-class-passed -->
-        </div> <!-- panel AutoTestSuite1 -->
-        <div panel-name="test-xml-AutoTestSuite1" class="panel">
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/ejsantos/Documents/newbirth/git/NewAutoTest/testng.xml</span>
+            <span class="header-content">/private/var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/testng-eclipse-2093171198/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AutoTestSuite1&quot;&gt;
-  &lt;test name=&quot;Regression1&quot;&gt;
-    &lt;parameter name=&quot;environment&quot; value=&quot;stg&quot;/&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;parameter name=&quot;environment&quot; value=&quot;stg&quot;/&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.angloinfo.testcases.TestSuiteA&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Regression1 --&gt;
-&lt;/suite&gt; &lt;!-- AutoTestSuite1 --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-AutoTestSuite1" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for AutoTestSuite1</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression1 (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-AutoTestSuite1" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for AutoTestSuite1</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-AutoTestSuite1" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for AutoTestSuite1</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_AutoTestSuite1');
-function tableData_AutoTestSuite1() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'signInViaEmail')
+data.setCell(0, 1, 'testLowerFooterLinks')
 data.setCell(0, 2, 'com.angloinfo.testcases.TestSuiteA')
-data.setCell(0, 3, 49603);
+data.setCell(0, 3, 30738);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addDirectoryViaCMS')
+data.setCell(1, 1, 'testAddingDirectoryViaCMS')
 data.setCell(1, 2, 'com.angloinfo.testcases.TestSuiteA')
-data.setCell(1, 3, 28467);
+data.setCell(1, 3, 26966);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLocationSwitcher')
+data.setCell(2, 1, 'testSignInViaEmail')
 data.setCell(2, 2, 'com.angloinfo.testcases.TestSuiteA')
-data.setCell(2, 3, 12601);
+data.setCell(2, 3, 18927);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'registerUserViaApi')
+data.setCell(3, 1, 'testLocationSwitcher')
 data.setCell(3, 2, 'com.angloinfo.testcases.TestSuiteA')
-data.setCell(3, 3, 5211);
-window.suiteTableData['AutoTestSuite1']= { tableData: data, tableDiv: 'times-div-AutoTestSuite1'}
+data.setCell(3, 3, 14317);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testRegisterUserViaApi')
+data.setCell(4, 2, 'com.angloinfo.testcases.TestSuiteA')
+data.setCell(4, 3, 5120);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-AutoTestSuite1">
-              </div> <!-- times-div-AutoTestSuite1 -->
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-AutoTestSuite1" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for AutoTestSuite1</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">signInViaEmail</span>
+              <span class="reporter-method-name">testSignInViaEmail</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">succesfull login</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-AutoTestSuite1" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-AutoTestSuite1" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -282,24 +372,30 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">addDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df)</span>
-                <span class="method-start">13674 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">registerUserViaApi(com.angloinfo.data.Member@16c8b7bd)</span>
-                <span class="method-start">42142 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">signInViaEmail</span>
-                <span class="method-start">47356 ms</span>
+                <span class="method-name">testAddingDirectoryViaCMS(com.angloinfo.data.DirectoryListing@66e889df)</span>
+                <span class="method-start">13264 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLocationSwitcher</span>
-                <span class="method-start">96960 ms</span>
+                <span class="method-start">40244 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLowerFooterLinks</span>
+                <span class="method-start">54563 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterUserViaApi(com.angloinfo.data.Member@36bed37a)</span>
+                <span class="method-start">85304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignInViaEmail</span>
+                <span class="method-start">90431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">109567 ms</span>
+                <span class="method-start">109359 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

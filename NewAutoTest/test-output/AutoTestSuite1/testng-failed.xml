@@ -8,4 +8,16 @@
       <class name="com.angloinfo.testcases.TestSuiteA"/>
     </classes>
   </test> <!-- Regression1 -->
+  <test name="Regression1(failed)">
+    <parameter name="environment" value="stg"/>
+    <classes>
+      <class name="com.angloinfo.testcases.TestSuiteA">
+        <methods>
+          <include name="afterTest"/>
+          <include name="testLowerFooterLinks"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.angloinfo.testcases.TestSuiteA -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
 </suite> <!-- Failed suite [AutoTestSuite1] -->

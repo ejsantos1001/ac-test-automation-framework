@@ -4,6 +4,8 @@ package com.angloinfo.testcases;
 
 import static com.jayway.restassured.RestAssured.given;
 
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -20,9 +22,12 @@ import com.angloinfo.pageobjects.CMSHeaderSection;
 import com.angloinfo.pageobjects.CMSLoginPage;
 import com.angloinfo.pageobjects.FEGlobalHomePage;
 import com.angloinfo.pageobjects.FELoginPage;
+import com.angloinfo.pageobjects.FELowerFooterSection;
 import com.angloinfo.tools.WebDriverManager;
+import com.gargoylesoftware.htmlunit.WebClient;
 import com.angloinfo.tools.AuthManager;
 import com.angloinfo.tools.UrlManager;
+
 
 
 public class TestSuiteA {
@@ -32,6 +37,7 @@ public class TestSuiteA {
 	 String accesstoken;
 	 String apibaseurl; 
 	 WebDriver driver;
+	 WebClient client;
 	 WebDriverWait wait ;
 	
 	
@@ -93,7 +99,7 @@ public class TestSuiteA {
 	 }
 	 
 	 @Test(dataProvider = "dp2" , threadPoolSize=1 , invocationCount = 1 , timeOut=10000)
-	  public void registerUserViaApi(Member regMember) {
+	 public void testRegisterUserViaApi(Member regMember) {
 		   given().
 		   		auth().oauth2(accesstoken).
 		   		queryParam("firstname",regMember.getFirstname()).
@@ -121,8 +127,28 @@ public class TestSuiteA {
 	    
 	    };
 	  } 
-
+	  
+	@Test
+	public void testLowerFooterLinks() {
+		
+		FEGlobalHomePage FEGlobalHomePage_i1 = new FEGlobalHomePage(driver);
+		FEGlobalHomePage_i1.goToPage(febaseurl);
+		FELowerFooterSection FELowerFooterSection_i1 = new FELowerFooterSection(driver);
+		FELowerFooterSection_i1.clickPrivacyPolicyLink();
+		FELowerFooterSection_i1.clickSiteMapLink();
+		FELowerFooterSection_i1.clickTermsOfUserLink();
+		FELowerFooterSection_i1.clickCookiesLink();
+		
+		
+		
+	}
 	
+
+
+
+
+
+
 	@AfterTest
 	public void afterTest () {
 		driver.close();
