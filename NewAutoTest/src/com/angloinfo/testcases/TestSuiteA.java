@@ -49,7 +49,7 @@ public class TestSuiteA {
 	
 	
 	@Test(dataProvider = "dp")
-	public void addDirectoryViaCMS(DirectoryListing dl) {
+	public void testAddingDirectoryViaCMS(DirectoryListing dl) {
 		
 		CMSLoginPage CMSLoginPage_i1 = new CMSLoginPage(driver);
 		CMSLoginPage_i1.goToPage(cmsbaseurl);
@@ -73,7 +73,7 @@ public class TestSuiteA {
 	}
 	 
 	 @Test
-	 public void signInViaEmail() {
+	 public void testSignInViaEmail() {
 			
 			FELoginPage LoginPage_i1 = new FELoginPage(driver);
 			LoginPage_i1.goToPage(febaseurl);
