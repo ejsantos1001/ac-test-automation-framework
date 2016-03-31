@@ -1,9 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="AutoTestSuite1" verbose ="1">
 	<test name="Regression1">
-	<parameter name ="environment" value ="stg"/>
+		<parameter name ="environment" value ="stg"/>
 		<classes>
-			<class name ="com.angloinfo.testcases.TestSuiteA"/>
+			<class name ="com.angloinfo.testcases.TestSuiteA">
+				<methods>
+				<include name= "testCheckEmail"/>
+				</methods>
+			</class>
 		</classes>
 	</test>
 </suite>
+

@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AutoTestSuite1]">
   <parameter name="environment" value="stg"/>
-  <test verbose="2" name="Default test">
-    <classes>
-      <class name="com.angloinfo.testcases.TestSuiteA"/>
-    </classes>
-  </test> <!-- Default test -->
-  <test name="Default test(failed)">
+  <test name="Regression1">
+    <parameter name="environment" value="stg"/>
     <classes>
       <class name="com.angloinfo.testcases.TestSuiteA">
         <methods>
-          <include name="afterTest"/>
-          <include name="testLowerFooterLinks"/>
-          <include name="beforeTest"/>
+          <include name="testCheckEmail"/>
         </methods>
       </class> <!-- com.angloinfo.testcases.TestSuiteA -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression1 -->
+</suite> <!-- Failed suite [AutoTestSuite1] -->

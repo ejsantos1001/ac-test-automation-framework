@@ -1,11 +1,8 @@
-package com.angloinfo.testcases;
+package com.angloinfo.testsuites;
 
 
 
 import static com.jayway.restassured.RestAssured.given;
-
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -27,7 +24,7 @@ import com.angloinfo.tools.WebDriverManager;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.angloinfo.tools.AuthManager;
 import com.angloinfo.tools.UrlManager;
-
+import com.angloinfo.tools.MailManager;
 
 
 public class TestSuiteA {
@@ -88,7 +85,14 @@ public class TestSuiteA {
 			LoginPage_i1.clickLogin();	
 			Assert.assertEquals(LoginPage_i1.getCurrentUrl(), febaseurl + "/buenos-aires/member/dashboard");
 			Reporter.log("succesfull login");
+	
+			
+			
 		}
+	 @Test
+	 public void testCheckEmail() {
+			MailManager.checkGmail("ainfo1001@gmail.com", "anglo123");
+	 }
 	 
 	 @Test
 	 public void testLocationSwitcher() {

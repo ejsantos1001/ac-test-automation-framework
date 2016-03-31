@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="/Users/ejsantos/Documents/newbirth/json-path-2.8.0-dist/json-path-2.8.0-deps/groovy-json-2.4.4.jar"/>
 	<classpathentry kind="lib" path="/Users/ejsantos/Documents/newbirth/scribejava-scribejava-2.3.0/scribejava-apis/src/main/java/com/github/scribejava/apis"/>
 	<classpathentry kind="lib" path="/Users/ejsantos/Documents/newbirth/scribejava-scribejava-2.3.0/scribejava-core/src/main"/>
+	<classpathentry kind="lib" path="/Users/ejsantos/Documents/newbirth/javamail/javax.mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 25 00:48:54 PHT 2016</td>
+<td>Started on:</td><td>Wed Mar 30 16:42:18 PHT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>109 seconds (109792 ms)</td>
+<tr><td>Total time:</td><td>195 seconds (195038 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,36 +76,27 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.angloinfo.testcases.TestSuiteA.testLowerFooterLinks()'><b>testLowerFooterLinks</b><br>Test class: com.angloinfo.testcases.TestSuiteA</td>
-<td><div><pre>com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: 404 Not Found for https://stgcms.angloinfo.com//sponsor/?append_id=sponsor-box-widget
-	at com.gargoylesoftware.htmlunit.WebClient.throwFailingHttpStatusCodeExceptionIfNecessary(WebClient.java:535)
-	at com.gargoylesoftware.htmlunit.html.HtmlPage.loadJavaScriptFromUrl(HtmlPage.java:1076)
-	at com.gargoylesoftware.htmlunit.html.HtmlPage.loadExternalJavaScriptFile(HtmlPage.java:1009)
-	at com.gargoylesoftware.htmlunit.html.HtmlScript.executeScriptIfNeeded(HtmlScript.java:395)
-	at com.gargoylesoftware.htmlunit.html.HtmlScript$3.execute(HtmlScript.java:270)
-	at com.gargoylesoftware.htmlunit.html.HtmlScript.onAllChildrenAddedToPage(HtmlScript.java:290)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.endElement(HTMLParser.java:800)
-	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.endElement(HTMLParser.java:757)
-	at org.cyberneko.html.HTMLTagBalancer.callEndElement(HTMLTagBalancer.java:1170)
-	at org.cyberneko.html.HTMLTagBalancer.endElement(HTMLTagBalancer.java:1072)
-	at org.cyberneko.html.filters.DefaultFilter.endElement(DefaultFilter.java:206)
-	at org.cyberneko.html.filters.NamespaceBinder.endElement(NamespaceBinder.java:330)
-	at org.cyberneko.html.HTMLScanner$ContentScanner.scanEndElement(HTMLScanner.java:3126)
-	at org.cyberneko.html.HTMLScanner$ContentScanner.scan(HTMLScanner.java:2093)
-	at org.cyberneko.html.HTMLScanner.scanDocument(HTMLScanner.java:920)
-	at org.cyberneko.html.HTMLConfiguration.parse(HTMLConfiguration.java:499)
-	at org.cyberneko.html.HTMLConfiguration.parse(HTMLConfiguration.java:452)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.parse(HTMLParser.java:1040)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser.parse(HTMLParser.java:253)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser.parseHtml(HTMLParser.java:199)
-	at com.gargoylesoftware.htmlunit.DefaultPageCreator.createHtmlPage(DefaultPageCreator.java:272)
-	at com.gargoylesoftware.htmlunit.DefaultPageCreator.createPage(DefaultPageCreator.java:160)
-	at com.gargoylesoftware.htmlunit.WebClient.loadWebResponseInto(WebClient.java:476)
-	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:350)
-	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:415)
-	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:400)
-	at com.angloinfo.tools.HtmlUnitTools.getResponseCode(HtmlUnitTools.java:12)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]&quot;}
+Command duration or timeout: 2.28 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4117473f-e491-7648-a57f-1069ff41a9a6
+*** Element info: {Using=xpath, value=//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.angloinfo.pageobjects.FELowerFooterSection.clickTermsOfUserLink(FELowerFooterSection.java:19)
 	at com.angloinfo.testcases.TestSuiteA.testLowerFooterLinks(TestSuiteA.java:139)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -131,37 +122,38 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2089858999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2089858999'><pre>com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: 404 Not Found for https://stgcms.angloinfo.com//sponsor/?append_id=sponsor-box-widget
-	at com.gargoylesoftware.htmlunit.WebClient.throwFailingHttpStatusCodeExceptionIfNecessary(WebClient.java:535)
-	at com.gargoylesoftware.htmlunit.html.HtmlPage.loadJavaScriptFromUrl(HtmlPage.java:1076)
-	at com.gargoylesoftware.htmlunit.html.HtmlPage.loadExternalJavaScriptFile(HtmlPage.java:1009)
-	at com.gargoylesoftware.htmlunit.html.HtmlScript.executeScriptIfNeeded(HtmlScript.java:395)
-	at com.gargoylesoftware.htmlunit.html.HtmlScript$3.execute(HtmlScript.java:270)
-	at com.gargoylesoftware.htmlunit.html.HtmlScript.onAllChildrenAddedToPage(HtmlScript.java:290)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.endElement(HTMLParser.java:800)
-	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.endElement(HTMLParser.java:757)
-	at org.cyberneko.html.HTMLTagBalancer.callEndElement(HTMLTagBalancer.java:1170)
-	at org.cyberneko.html.HTMLTagBalancer.endElement(HTMLTagBalancer.java:1072)
-	at org.cyberneko.html.filters.DefaultFilter.endElement(DefaultFilter.java:206)
-	at org.cyberneko.html.filters.NamespaceBinder.endElement(NamespaceBinder.java:330)
-	at org.cyberneko.html.HTMLScanner$ContentScanner.scanEndElement(HTMLScanner.java:3126)
-	at org.cyberneko.html.HTMLScanner$ContentScanner.scan(HTMLScanner.java:2093)
-	at org.cyberneko.html.HTMLScanner.scanDocument(HTMLScanner.java:920)
-	at org.cyberneko.html.HTMLConfiguration.parse(HTMLConfiguration.java:499)
-	at org.cyberneko.html.HTMLConfiguration.parse(HTMLConfiguration.java:452)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser$HtmlUnitDOMBuilder.parse(HTMLParser.java:1040)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser.parse(HTMLParser.java:253)
-	at com.gargoylesoftware.htmlunit.html.HTMLParser.parseHtml(HTMLParser.java:199)
-	at com.gargoylesoftware.htmlunit.DefaultPageCreator.createHtmlPage(DefaultPageCreator.java:272)
-	at com.gargoylesoftware.htmlunit.DefaultPageCreator.createPage(DefaultPageCreator.java:160)
-	at com.gargoylesoftware.htmlunit.WebClient.loadWebResponseInto(WebClient.java:476)
-	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:350)
-	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:415)
-	at com.gargoylesoftware.htmlunit.WebClient.getPage(WebClient.java:400)
-	at com.angloinfo.tools.HtmlUnitTools.getResponseCode(HtmlUnitTools.java:12)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1788545647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1788545647'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]&quot;}
+Command duration or timeout: 2.28 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4117473f-e491-7648-a57f-1069ff41a9a6
+*** Element info: {Using=xpath, value=//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.angloinfo.pageobjects.FELowerFooterSection.clickTermsOfUserLink(FELowerFooterSection.java:19)
 	at com.angloinfo.testcases.TestSuiteA.testLowerFooterLinks(TestSuiteA.java:139)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -187,9 +179,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous5257674293892287365webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
 </pre></div></td>
-<td>30</td>
-<td>com.angloinfo.testcases.TestSuiteA@34340fab</td></tr>
+<td>14</td>
+<td>com.angloinfo.testcases.TestSuiteA@2b80d80f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -199,32 +201,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.angloinfo.testcases.TestSuiteA.testAddingDirectoryViaCMS()'><b>testAddingDirectoryViaCMS</b><br>Test class: com.angloinfo.testcases.TestSuiteA<br>Parameters: com.angloinfo.data.DirectoryListing@66e889df</td>
+<td title='com.angloinfo.testcases.TestSuiteA.testAddingDirectoryViaCMS()'><b>testAddingDirectoryViaCMS</b><br>Test class: com.angloinfo.testcases.TestSuiteA<br>Parameters: com.angloinfo.data.DirectoryListing@3766c667</td>
 <td></td>
-<td>26</td>
-<td>com.angloinfo.testcases.TestSuiteA@34340fab</td></tr>
+<td>70</td>
+<td>com.angloinfo.testcases.TestSuiteA@2b80d80f</td></tr>
 <tr>
 <td title='com.angloinfo.testcases.TestSuiteA.testLocationSwitcher()'><b>testLocationSwitcher</b><br>Test class: com.angloinfo.testcases.TestSuiteA</td>
 <td></td>
-<td>14</td>
-<td>com.angloinfo.testcases.TestSuiteA@34340fab</td></tr>
+<td>17</td>
+<td>com.angloinfo.testcases.TestSuiteA@2b80d80f</td></tr>
 <tr>
-<td title='com.angloinfo.testcases.TestSuiteA.testRegisterUserViaApi()'><b>testRegisterUserViaApi</b><br>Test class: com.angloinfo.testcases.TestSuiteA<br>Parameters: com.angloinfo.data.Member@36bed37a</td>
+<td title='com.angloinfo.testcases.TestSuiteA.testRegisterUserViaApi()'><b>testRegisterUserViaApi</b><br>Test class: com.angloinfo.testcases.TestSuiteA<br>Parameters: com.angloinfo.data.Member@2a1debfa</td>
 <td></td>
-<td>5</td>
-<td>com.angloinfo.testcases.TestSuiteA@34340fab</td></tr>
+<td>7</td>
+<td>com.angloinfo.testcases.TestSuiteA@2b80d80f</td></tr>
 <tr>
 <td title='com.angloinfo.testcases.TestSuiteA.testSignInViaEmail()'><b>testSignInViaEmail</b><br>Test class: com.angloinfo.testcases.TestSuiteA<br/>
-<a href="#Output-1885991030" onClick='toggleBox("Output-1885991030", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1900307803" onClick='toggleBox("Output-1900307803", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1885991030" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1885991030">
+<a href="#Output-1900307803" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1900307803">
 succesfull login<br/>
 </div>
 </td>
 <td></td>
-<td>18</td>
-<td>com.angloinfo.testcases.TestSuiteA@34340fab</td></tr>
+<td>32</td>
+<td>com.angloinfo.testcases.TestSuiteA@2b80d80f</td></tr>
 </table><p>
 </body>
 </html>
