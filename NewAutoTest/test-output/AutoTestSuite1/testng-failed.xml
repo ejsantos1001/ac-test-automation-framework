@@ -13,7 +13,8 @@
     <classes>
       <class name="com.angloinfo.testsuites.TestSuiteA">
         <methods>
-          <include name="testLowerFooterLinks"/>
+          <include name="testLocationSwitcher"/>
+          <include name="testRegisterUserViaApi" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>

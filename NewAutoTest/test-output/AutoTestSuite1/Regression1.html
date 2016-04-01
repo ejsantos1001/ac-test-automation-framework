@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regression1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 01 14:35:20 PHT 2016</td>
+<td>Started on:</td><td>Fri Apr 01 14:49:54 PHT 2016</td>
 </tr>
-<tr><td>Total time:</td><td>260 seconds (260289 ms)</td>
+<tr><td>Total time:</td><td>432 seconds (432641 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,45 +75,38 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.angloinfo.testsuites.TestSuiteA.testLowerFooterLinks()'><b>testLowerFooterLinks</b><br>Test class: com.angloinfo.testsuites.TestSuiteA</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]&quot;}
-Command duration or timeout: 4.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='com.angloinfo.testsuites.TestSuiteA.testLocationSwitcher()'><b>testLocationSwitcher</b><br>Test class: com.angloinfo.testsuites.TestSuiteA</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 41 milliseconds
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
 System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19b92928-b956-644b-8210-f3a1b096e423
-*** Element info: {Using=xpath, value=//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]}
+Session ID: 2e669713-b6bc-d04b-87de-543e3f733829
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.angloinfo.pageobjects.FELowerFooterSection.clickTermsOfUserLink(FELowerFooterSection.java:19)
-	at com.angloinfo.testsuites.TestSuiteA.testLowerFooterLinks(TestSuiteA.java:152)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
+	at com.angloinfo.pageobjects.FEGlobalHomePage.switchLocation(FEGlobalHomePage.java:23)
+	at com.angloinfo.testsuites.TestSuiteA.testLocationSwitcher(TestSuiteA.java:110)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
 System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2008666311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2008666311'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]&quot;}
-Command duration or timeout: 4.07 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace182678201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace182678201'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 41 milliseconds
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
 System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 19b92928-b956-644b-8210-f3a1b096e423
-*** Element info: {Using=xpath, value=//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]}
+Session ID: 2e669713-b6bc-d04b-87de-543e3f733829
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -121,12 +114,10 @@ Session ID: 19b92928-b956-644b-8210-f3a1b096e423
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.angloinfo.pageobjects.FELowerFooterSection.clickTermsOfUserLink(FELowerFooterSection.java:19)
-	at com.angloinfo.testsuites.TestSuiteA.testLowerFooterLinks(TestSuiteA.java:152)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
+	at com.angloinfo.pageobjects.FEGlobalHomePage.switchLocation(FEGlobalHomePage.java:23)
+	at com.angloinfo.testsuites.TestSuiteA.testLocationSwitcher(TestSuiteA.java:110)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,18 +142,88 @@ Session ID: 19b92928-b956-644b-8210-f3a1b096e423
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;footer-bottom&apos;]/div/div/a[2]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
 System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous4549582657986847351webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
 </pre></div></td>
-<td>27</td>
+<td>243</td>
+<td>com.angloinfo.testsuites.TestSuiteA@2b80d80f</td></tr>
+<tr>
+<td title='com.angloinfo.testsuites.TestSuiteA.testRegisterUserViaApi()'><b>testRegisterUserViaApi</b><br>Test class: com.angloinfo.testsuites.TestSuiteA<br>Parameters: com.angloinfo.data.Member@336365bc</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testRegisterUserViaApi() didn&apos;t finish within the time-out 10000
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at com.sun.mail.iap.ResponseInputStream.readResponse(ResponseInputStream.java:103)
+	at com.sun.mail.iap.Response.&lt;init&gt;(Response.java:114)
+	at com.sun.mail.imap.protocol.IMAPResponse.&lt;init&gt;(IMAPResponse.java:60)
+	at com.sun.mail.imap.protocol.IMAPProtocol.readResponse(IMAPProtocol.java:390)
+	at com.sun.mail.iap.Protocol.command(Protocol.java:354)
+	at com.sun.mail.imap.protocol.IMAPProtocol.storeFlags(IMAPProtocol.java:2357)
+	at com.sun.mail.imap.protocol.IMAPProtocol.storeFlags(IMAPProtocol.java:2350)
+	at com.sun.mail.imap.IMAPMessage.setFlags(IMAPMessage.java:1035)
+	at javax.mail.Message.setFlag(Message.java:591)
+	at com.angloinfo.tools.MailManager.verifyEmailRecieved(MailManager.java:60)
+	at com.angloinfo.testsuites.TestSuiteA.testRegisterUserViaApi(TestSuiteA.java:132)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726107869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726107869'><pre>org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testRegisterUserViaApi() didn&apos;t finish within the time-out 10000
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at com.sun.mail.iap.ResponseInputStream.readResponse(ResponseInputStream.java:103)
+	at com.sun.mail.iap.Response.&lt;init&gt;(Response.java:114)
+	at com.sun.mail.imap.protocol.IMAPResponse.&lt;init&gt;(IMAPResponse.java:60)
+	at com.sun.mail.imap.protocol.IMAPProtocol.readResponse(IMAPProtocol.java:390)
+	at com.sun.mail.iap.Protocol.command(Protocol.java:354)
+	at com.sun.mail.imap.protocol.IMAPProtocol.storeFlags(IMAPProtocol.java:2357)
+	at com.sun.mail.imap.protocol.IMAPProtocol.storeFlags(IMAPProtocol.java:2350)
+	at com.sun.mail.imap.IMAPMessage.setFlags(IMAPMessage.java:1035)
+	at javax.mail.Message.setFlag(Message.java:591)
+	at com.angloinfo.tools.MailManager.verifyEmailRecieved(MailManager.java:60)
+	at com.angloinfo.testsuites.TestSuiteA.testRegisterUserViaApi(TestSuiteA.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre></div></td>
+<td>10</td>
 <td>com.angloinfo.testsuites.TestSuiteA@2b80d80f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -175,34 +236,29 @@ Driver info: driver.version: unknown
 <tr>
 <td title='com.angloinfo.testsuites.TestSuiteA.testAddingDirectoryViaCMS()'><b>testAddingDirectoryViaCMS</b><br>Test class: com.angloinfo.testsuites.TestSuiteA<br>Parameters: com.angloinfo.data.DirectoryListing@3766c667</td>
 <td></td>
-<td>56</td>
+<td>44</td>
 <td>com.angloinfo.testsuites.TestSuiteA@2b80d80f</td></tr>
 <tr>
-<td title='com.angloinfo.testsuites.TestSuiteA.testLocationSwitcher()'><b>testLocationSwitcher</b><br>Test class: com.angloinfo.testsuites.TestSuiteA</td>
+<td title='com.angloinfo.testsuites.TestSuiteA.testLowerFooterLinks()'><b>testLowerFooterLinks</b><br>Test class: com.angloinfo.testsuites.TestSuiteA</td>
 <td></td>
-<td>25</td>
-<td>com.angloinfo.testsuites.TestSuiteA@2b80d80f</td></tr>
-<tr>
-<td title='com.angloinfo.testsuites.TestSuiteA.testRegisterUserViaApi()'><b>testRegisterUserViaApi</b><br>Test class: com.angloinfo.testsuites.TestSuiteA<br>Parameters: com.angloinfo.data.Member@6c298dc</td>
-<td></td>
-<td>7</td>
+<td>27</td>
 <td>com.angloinfo.testsuites.TestSuiteA@2b80d80f</td></tr>
 <tr>
 <td title='com.angloinfo.testsuites.TestSuiteA.testResetPasswordMailRecieved()'><b>testResetPasswordMailRecieved</b><br>Test class: com.angloinfo.testsuites.TestSuiteA</td>
 <td></td>
-<td>35</td>
+<td>22</td>
 <td>com.angloinfo.testsuites.TestSuiteA@2b80d80f</td></tr>
 <tr>
 <td title='com.angloinfo.testsuites.TestSuiteA.testSignInViaEmail()'><b>testSignInViaEmail</b><br>Test class: com.angloinfo.testsuites.TestSuiteA<br/>
-<a href="#Output-2118984327" onClick='toggleBox("Output-2118984327", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1735390128" onClick='toggleBox("Output-1735390128", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2118984327" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2118984327">
+<a href="#Output-1735390128" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1735390128">
 succesfull login<br/>
 </div>
 </td>
 <td></td>
-<td>64</td>
+<td>52</td>
 <td>com.angloinfo.testsuites.TestSuiteA@2b80d80f</td></tr>
 </table><p>
 </body>
