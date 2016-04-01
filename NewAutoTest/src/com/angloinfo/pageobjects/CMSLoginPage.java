@@ -13,6 +13,7 @@ public class CMSLoginPage {
 	WebElement passwordfield;
 	WebElement loginbutton;
 
+
 	
 	public CMSLoginPage(WebDriver driver){
 		this.driver = driver;	
@@ -36,6 +37,8 @@ public class CMSLoginPage {
 		loginbutton = driver.findElement(By.xpath("//button[@type='submit']"));
 		loginbutton.click();
 	}
+	
+	
 	
 	
 	

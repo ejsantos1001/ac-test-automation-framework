@@ -3,11 +3,8 @@
 	<test name="Regression1">
 		<parameter name ="environment" value ="stg"/>
 		<classes>
-			<class name ="com.angloinfo.testcases.TestSuiteA">
-				<methods>
-				<include name= "testCheckEmail"/>
-				</methods>
-			</class>
+			<class name ="com.angloinfo.testsuites.TestSuiteA"/>
+			
 		</classes>
 	</test>
 </suite>

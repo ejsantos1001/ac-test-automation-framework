@@ -5,11 +5,19 @@
   <test name="Regression1">
     <parameter name="environment" value="stg"/>
     <classes>
-      <class name="com.angloinfo.testcases.TestSuiteA">
-        <methods>
-          <include name="testCheckEmail"/>
-        </methods>
-      </class> <!-- com.angloinfo.testcases.TestSuiteA -->
+      <class name="com.angloinfo.testsuites.TestSuiteA"/>
     </classes>
   </test> <!-- Regression1 -->
+  <test name="Regression1(failed)">
+    <parameter name="environment" value="stg"/>
+    <classes>
+      <class name="com.angloinfo.testsuites.TestSuiteA">
+        <methods>
+          <include name="testLowerFooterLinks"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.angloinfo.testsuites.TestSuiteA -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
 </suite> <!-- Failed suite [AutoTestSuite1] -->

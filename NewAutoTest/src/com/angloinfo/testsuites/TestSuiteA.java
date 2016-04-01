@@ -17,6 +17,7 @@ import com.angloinfo.data.Member;
 import com.angloinfo.pageobjects.CMSDirectorySubSection;
 import com.angloinfo.pageobjects.CMSHeaderSection;
 import com.angloinfo.pageobjects.CMSLoginPage;
+import com.angloinfo.pageobjects.FEForgotPasswordPage;
 import com.angloinfo.pageobjects.FEGlobalHomePage;
 import com.angloinfo.pageobjects.FELoginPage;
 import com.angloinfo.pageobjects.FELowerFooterSection;
@@ -90,10 +91,18 @@ public class TestSuiteA {
 			
 		}
 	 @Test
-	 public void testCheckEmail() {
-			MailManager.checkGmail("ainfo1001@gmail.com", "anglo123");
+	 public void testResetPasswordMailRecieved() {
+		FELoginPage LoginPage_i1 = new FELoginPage(driver);
+		LoginPage_i1.goToPage(febaseurl);
+		LoginPage_i1.clickForgotDetails();
+		FEForgotPasswordPage FEForgotPasswordpage_i1 = new FEForgotPasswordPage(driver) ;
+		FEForgotPasswordpage_i1.sendResetPasswordLink("ainfo1001+7@gmail.com");
+		String subject = "Your AngloInfo Password Reset Link";
+		Assert.assertEquals(
+				 	MailManager.verifyEmailRecieved(subject, "ainfo1001+7@gmail.com", "anglo123")
+					,true );
 	 }
-	 
+	 	
 	 @Test
 	 public void testLocationSwitcher() {
 		 	FEGlobalHomePage FEGlobalHomePage_i1 = new FEGlobalHomePage(driver);
@@ -118,9 +127,11 @@ public class TestSuiteA {
 		  	then().
 		  		statusCode(200);
 		  	
-		  	
-		  	System.out.println(regMember.getEmail());
-		  	System.out.println(regMember.getUsername());
+			String subject = "Email Verification";
+			Assert.assertEquals(
+					 	MailManager.verifyEmailRecieved(subject, "ainfo1001+7@gmail.com", "anglo123")
+						,true );
+			
 		  
 	  }
 	  

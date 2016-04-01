@@ -10,6 +10,7 @@ public class FELoginPage {
 	WebElement emailfield;
 	WebElement passwordfield;
 	WebElement loginbutton;
+	WebElement forgotdetailsbutton;
 	
 	public FELoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -37,6 +38,11 @@ public class FELoginPage {
 	
 	public  String getCurrentUrl() {
 		return driver.getCurrentUrl();
+	}
+	
+	public void clickForgotDetails() {
+		forgotdetailsbutton = driver.findElement(By.xpath(".//*[@id='form-signin']/div[5]/span/a"));
+		forgotdetailsbutton.click();
 	}
 
 }

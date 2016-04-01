@@ -1,32 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="AutoTestSuite1" duration-ms="14827" started-at="2016-03-30T13:53:51Z" finished-at="2016-03-30T13:54:06Z">
+  <suite name="Default suite" duration-ms="226" started-at="2016-04-01T06:49:42Z" finished-at="2016-04-01T06:49:43Z">
     <groups>
     </groups>
-    <test name="Regression1" duration-ms="14827" started-at="2016-03-30T13:53:51Z" finished-at="2016-03-30T13:54:06Z">
-      <class name="com.angloinfo.testcases.TestSuiteA">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testcases.TestSuiteA@546a03af]" name="beforeTest" is-config="true" duration-ms="10135" started-at="2016-03-30T21:53:51Z" finished-at="2016-03-30T21:54:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[stg]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="226" started-at="2016-04-01T06:49:42Z" finished-at="2016-04-01T06:49:43Z">
+      <class name="com.angloinfo.testsuites.TestSuiteA">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-04-01T14:49:42Z" finished-at="2016-04-01T14:49:42Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'environment' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/testng-eclipse--1041734478/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'environment' is required by @Configuration on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/testng-eclipse--1041734478/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:201)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testCheckEmail()[pri:0, instance:com.angloinfo.testcases.TestSuiteA@546a03af]" name="testCheckEmail" duration-ms="4456" started-at="2016-03-30T21:54:01Z" finished-at="2016-03-30T21:54:06Z">
+        <test-method status="SKIP" signature="testResetPasswordMailRecieved()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="testResetPasswordMailRecieved" duration-ms="8" started-at="2016-04-01T14:49:43Z" finished-at="2016-04-01T14:49:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCheckEmail -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testcases.TestSuiteA@546a03af]" name="afterTest" is-config="true" duration-ms="215" started-at="2016-03-30T21:54:06Z" finished-at="2016-03-30T21:54:06Z">
+        </test-method> <!-- testResetPasswordMailRecieved -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-04-01T14:49:43Z" finished-at="2016-04-01T14:49:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.angloinfo.testcases.TestSuiteA -->
-    </test> <!-- Regression1 -->
-  </suite> <!-- AutoTestSuite1 -->
+      </class> <!-- com.angloinfo.testsuites.TestSuiteA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
