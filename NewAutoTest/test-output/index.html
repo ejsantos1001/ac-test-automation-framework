@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content failed suite-AutoTestSuite1">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testsuites.TestSuiteA" hash-for-method="testLocationSwitcher">testLocationSwitcher</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testsuites.TestSuiteA" hash-for-method="testRegisterUserViaApi(com.angloinfo.data.Member@336365bc)">testRegisterUserViaApi(com.angloinfo.data.Member@336365bc)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testsuites.TestSuiteA" hash-for-method="testResetPasswordMailRecieved">testResetPasswordMailRecieved</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-AutoTestSuite1 -->
@@ -126,12 +121,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testsuites.TestSuiteA" hash-for-method="testLocationSwitcher">testLocationSwitcher</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testsuites.TestSuiteA" hash-for-method="testLowerFooterLinks">testLowerFooterLinks</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testsuites.TestSuiteA" hash-for-method="testResetPasswordMailRecieved">testResetPasswordMailRecieved</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-AutoTestSuite1" title="com.angloinfo.testsuites.TestSuiteA" hash-for-method="testRegisterUserViaApi(com.angloinfo.data.Member@149f5761)">testRegisterUserViaApi(com.angloinfo.data.Member@149f5761)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,72 +159,12 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLocationSwitcher">
-                  </a> <!-- testLocationSwitcher -->
-                  <span class="method-name">testLocationSwitcher</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 41 milliseconds
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
-System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 2e669713-b6bc-d04b-87de-543e3f733829
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:122)
-	at com.angloinfo.pageobjects.FEGlobalHomePage.switchLocation(FEGlobalHomePage.java:23)
-	at com.angloinfo.testsuites.TestSuiteA.testLocationSwitcher(TestSuiteA.java:110)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
-System info: host: &apos;PragManilas-MacBook.local&apos;, ip: &apos;192.168.1.8&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.10&apos;, java.version: &apos;1.8.0_71&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous7523635025605287772webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testRegisterUserViaApi(com.angloinfo.data.Member@336365bc)">
-                  </a> <!-- testRegisterUserViaApi(com.angloinfo.data.Member@336365bc) -->
-                  <span class="method-name">testRegisterUserViaApi</span>
-                  <span class="parameters">(com.angloinfo.data.Member@336365bc)</span>
-                  <div class="stack-trace">org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testRegisterUserViaApi() didn&apos;t finish within the time-out 10000
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:170)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
-	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
-	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
-	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
-	at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:124)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
-	at com.sun.mail.iap.ResponseInputStream.readResponse(ResponseInputStream.java:103)
-	at com.sun.mail.iap.Response.&lt;init&gt;(Response.java:114)
-	at com.sun.mail.imap.protocol.IMAPResponse.&lt;init&gt;(IMAPResponse.java:60)
-	at com.sun.mail.imap.protocol.IMAPProtocol.readResponse(IMAPProtocol.java:390)
-	at com.sun.mail.iap.Protocol.command(Protocol.java:354)
-	at com.sun.mail.imap.protocol.IMAPProtocol.storeFlags(IMAPProtocol.java:2357)
-	at com.sun.mail.imap.protocol.IMAPProtocol.storeFlags(IMAPProtocol.java:2350)
-	at com.sun.mail.imap.IMAPMessage.setFlags(IMAPMessage.java:1035)
-	at javax.mail.Message.setFlag(Message.java:591)
-	at com.angloinfo.tools.MailManager.verifyEmailRecieved(MailManager.java:60)
-	at com.angloinfo.testsuites.TestSuiteA.testRegisterUserViaApi(TestSuiteA.java:132)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 7 stack frames
+                  <a name="testResetPasswordMailRecieved">
+                  </a> <!-- testResetPasswordMailRecieved -->
+                  <span class="method-name">testResetPasswordMailRecieved</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.angloinfo.testsuites.TestSuiteA.testResetPasswordMailRecieved(TestSuiteA.java:101)
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -246,6 +186,13 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testLocationSwitcher">
+                  </a> <!-- testLocationSwitcher -->
+                  <span class="method-name">testLocationSwitcher</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testLowerFooterLinks">
                   </a> <!-- testLowerFooterLinks -->
                   <span class="method-name">testLowerFooterLinks</span>
@@ -253,9 +200,10 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testResetPasswordMailRecieved">
-                  </a> <!-- testResetPasswordMailRecieved -->
-                  <span class="method-name">testResetPasswordMailRecieved</span>
+                  <a name="testRegisterUserViaApi(com.angloinfo.data.Member@149f5761)">
+                  </a> <!-- testRegisterUserViaApi(com.angloinfo.data.Member@149f5761) -->
+                  <span class="method-name">testRegisterUserViaApi</span>
+                  <span class="parameters">(com.angloinfo.data.Member@149f5761)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -288,8 +236,7 @@ Driver info: driver.version: unknown
     &lt;classes&gt;
       &lt;class name=&quot;com.angloinfo.testsuites.TestSuiteA&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testLocationSwitcher&quot;/&gt;
-          &lt;include name=&quot;testRegisterUserViaApi&quot; invocation-numbers=&quot;0&quot;/&gt;
+          &lt;include name=&quot;testResetPasswordMailRecieved&quot;/&gt;
           &lt;include name=&quot;beforeTest&quot;/&gt;
           &lt;include name=&quot;afterTest&quot;/&gt;
         &lt;/methods&gt;
@@ -338,34 +285,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLocationSwitcher')
+data.setCell(0, 1, 'testAddingDirectoryViaCMS')
 data.setCell(0, 2, 'com.angloinfo.testsuites.TestSuiteA')
-data.setCell(0, 3, 243372);
+data.setCell(0, 3, 27784);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testSignInViaEmail')
 data.setCell(1, 2, 'com.angloinfo.testsuites.TestSuiteA')
-data.setCell(1, 3, 52957);
+data.setCell(1, 3, 20905);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testAddingDirectoryViaCMS')
+data.setCell(2, 1, 'testLocationSwitcher')
 data.setCell(2, 2, 'com.angloinfo.testsuites.TestSuiteA')
-data.setCell(2, 3, 44787);
+data.setCell(2, 3, 17885);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testLowerFooterLinks')
 data.setCell(3, 2, 'com.angloinfo.testsuites.TestSuiteA')
-data.setCell(3, 3, 27009);
+data.setCell(3, 3, 14007);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testResetPasswordMailRecieved')
 data.setCell(4, 2, 'com.angloinfo.testsuites.TestSuiteA')
-data.setCell(4, 3, 22823);
+data.setCell(4, 3, 12511);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testRegisterUserViaApi')
 data.setCell(5, 2, 'com.angloinfo.testsuites.TestSuiteA')
-data.setCell(5, 3, 10057);
+data.setCell(5, 3, 9879);
 window.suiteTableData['AutoTestSuite1']= { tableData: data, tableDiv: 'times-div-AutoTestSuite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-AutoTestSuite1">
               </div> <!-- times-div-AutoTestSuite1 -->
             </div> <!-- times-div -->
@@ -404,35 +351,33 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testAddingDirectoryViaCMS(com.angloinfo.data.DirectoryListing@3766c667)</span>
-                <span class="method-start">30110 ms</span>
+                <span class="method-start">11318 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testLocationSwitcher</span>
-                <span class="method-start">74899 ms</span>
+                <span class="method-start">39116 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLowerFooterLinks</span>
-                <span class="method-start">318881 ms</span>
+                <span class="method-start">57003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterUserViaApi(com.angloinfo.data.Member@149f5761)</span>
+                <span class="method-start">71011 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testRegisterUserViaApi(com.angloinfo.data.Member@336365bc)</span>
-                <span class="method-start">345892 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">testResetPasswordMailRecieved</span>
-                <span class="method-start">355999 ms</span>
+                <span class="method-start">80891 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSignInViaEmail</span>
-                <span class="method-start">378831 ms</span>
+                <span class="method-start">93411 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">431798 ms</span>
+                <span class="method-start">114318 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
