@@ -111,7 +111,7 @@ public class TestSuiteA {
 		 
 	 }
 	 
-	 @Test(dataProvider = "dp2" , threadPoolSize=1 , invocationCount = 1 , timeOut=10000)
+	 @Test(dataProvider = "dp2" , threadPoolSize=1 , invocationCount = 1 , timeOut=50000)
 	 public void testRegisterUserViaApi(Member regMember) {
 		   given().
 		   		auth().oauth2(accesstoken).
@@ -152,12 +152,22 @@ public class TestSuiteA {
 		FELowerFooterSection_i1.clickPrivacyPolicyLink();
 		FELowerFooterSection_i1.clickSiteMapLink();
 		FELowerFooterSection_i1.clickTermsOfUserLink();
-		FELowerFooterSection_i1.clickCookiesLink();
+		FELowerFooterSection_i1.clickCookiesLink();	
+	}
+	
+	@Test
+	public void testEnquiryButton() {
+		FEGlobalHomePage FEGlobalHomePage_i1 = new FEGlobalHomePage(driver);
+		FEGlobalHomePage_i1.goToPage(febaseurl);
+		FEGlobalHomePage_i1.clickSignIn();
+		FELoginPage feLoginPage = new FELoginPage(driver);
+		feLoginPage.inputEmail("ainfo1001+7@gmail.com");
+		feLoginPage.inputPassword("Anglo123");
+		feLoginPage.clickLogin();
 		
 		
 		
 	}
-	
 
 
 

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="6" passed="5">
+<testng-results skipped="0" failed="1" total="7" passed="6">
   <reporter-output>
     <line>
       <![CDATA[succesfull login]]>
     </line>
   </reporter-output>
-  <suite name="AutoTestSuite1" duration-ms="114734" started-at="2016-04-01T15:49:55Z" finished-at="2016-04-01T15:51:50Z">
+  <suite name="AutoTestSuite2" duration-ms="143040" started-at="2016-04-06T11:59:57Z" finished-at="2016-04-06T12:02:21Z">
     <groups>
     </groups>
-    <test name="Regression1" duration-ms="114734" started-at="2016-04-01T15:49:55Z" finished-at="2016-04-01T15:51:50Z">
+    <test name="Regression2" duration-ms="143040" started-at="2016-04-06T11:59:57Z" finished-at="2016-04-06T12:02:21Z">
       <class name="com.angloinfo.testsuites.TestSuiteA">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2b80d80f]" name="beforeTest" is-config="true" duration-ms="11304" started-at="2016-04-01T23:49:55Z" finished-at="2016-04-01T23:50:07Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="beforeTest" is-config="true" duration-ms="13763" started-at="2016-04-06T19:59:57Z" finished-at="2016-04-06T20:00:11Z">
           <params>
             <param index="0">
               <value>
@@ -21,50 +21,61 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testAddingDirectoryViaCMS(com.angloinfo.data.DirectoryListing)[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2b80d80f]" name="testAddingDirectoryViaCMS" duration-ms="27784" started-at="2016-04-01T23:50:07Z" data-provider="dp" finished-at="2016-04-01T23:50:35Z">
+        <test-method status="PASS" signature="testAddingDirectoryViaCMS(com.angloinfo.data.DirectoryListing)[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="testAddingDirectoryViaCMS" duration-ms="29024" started-at="2016-04-06T20:00:11Z" data-provider="dp" finished-at="2016-04-06T20:00:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.angloinfo.data.DirectoryListing@3766c667]]>
+                <![CDATA[com.angloinfo.data.DirectoryListing@55b8dbda]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddingDirectoryViaCMS -->
-        <test-method status="PASS" signature="testLocationSwitcher()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2b80d80f]" name="testLocationSwitcher" duration-ms="17885" started-at="2016-04-01T23:50:35Z" finished-at="2016-04-01T23:50:52Z">
+        <test-method status="PASS" signature="testEnquiryButton()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="testEnquiryButton" duration-ms="33885" started-at="2016-04-06T20:00:40Z" finished-at="2016-04-06T20:01:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnquiryButton -->
+        <test-method status="PASS" signature="testLocationSwitcher()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="testLocationSwitcher" duration-ms="9848" started-at="2016-04-06T20:01:14Z" finished-at="2016-04-06T20:01:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLocationSwitcher -->
-        <test-method status="PASS" signature="testLowerFooterLinks()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2b80d80f]" name="testLowerFooterLinks" duration-ms="14007" started-at="2016-04-01T23:50:52Z" finished-at="2016-04-01T23:51:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLowerFooterLinks -->
-        <test-method status="PASS" signature="testRegisterUserViaApi(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2b80d80f]" name="testRegisterUserViaApi" duration-ms="9879" started-at="2016-04-01T23:51:06Z" data-provider="dp2" finished-at="2016-04-01T23:51:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.angloinfo.data.Member@149f5761]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegisterUserViaApi -->
-        <test-method status="FAIL" signature="testResetPasswordMailRecieved()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2b80d80f]" name="testResetPasswordMailRecieved" duration-ms="12511" started-at="2016-04-01T23:51:16Z" finished-at="2016-04-01T23:51:29Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="testLowerFooterLinks()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="testLowerFooterLinks" duration-ms="3757" started-at="2016-04-06T20:01:24Z" finished-at="2016-04-06T20:01:28Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[@id='footer-bottom']/div/div/a"}
+Command duration or timeout: 3.68 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'PragManilas-MacBook.local', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 767b898e-97d3-0b4a-8eaf-168cbaad0d08
+*** Element info: {Using=xpath, value=//div[@id='footer-bottom']/div/div/a}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:305)
-	at org.testng.Assert.assertEquals(Assert.java:315)
-	at com.angloinfo.testsuites.TestSuiteA.testResetPasswordMailRecieved(TestSuiteA.java:101)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='footer-bottom']/div/div/a"}
+Command duration or timeout: 3.68 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'PragManilas-MacBook.local', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 767b898e-97d3-0b4a-8eaf-168cbaad0d08
+*** Element info: {Using=xpath, value=//div[@id='footer-bottom']/div/div/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.angloinfo.pageobjects.FELowerFooterSection.clickPrivacyPolicyLink(FELowerFooterSection.java:15)
+	at com.angloinfo.testsuites.TestSuiteA.testLowerFooterLinks(TestSuiteA.java:152)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,24 +100,49 @@
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='footer-bottom']/div/div/a"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'PragManilas-MacBook.local', ip: '192.168.1.8', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous6661753914944224664webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous6661753914944224664webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous6661753914944224664webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous6661753914944224664webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/4f/6wbw2fxn1f76by0sq6zjrs3c0000gp/T/anonymous6661753914944224664webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLowerFooterLinks -->
+        <test-method status="PASS" signature="testRegisterUserViaApi(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="testRegisterUserViaApi" duration-ms="10568" started-at="2016-04-06T20:01:28Z" data-provider="dp2" finished-at="2016-04-06T20:01:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.angloinfo.data.Member@8ed9cf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterUserViaApi -->
+        <test-method status="PASS" signature="testResetPasswordMailRecieved()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="testResetPasswordMailRecieved" duration-ms="18784" started-at="2016-04-06T20:01:38Z" finished-at="2016-04-06T20:01:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResetPasswordMailRecieved -->
-        <test-method status="PASS" signature="testSignInViaEmail()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2b80d80f]" name="testSignInViaEmail" duration-ms="20905" started-at="2016-04-01T23:51:29Z" finished-at="2016-04-01T23:51:50Z">
+        <test-method status="PASS" signature="testSignInViaEmail()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="testSignInViaEmail" duration-ms="22738" started-at="2016-04-06T20:01:57Z" finished-at="2016-04-06T20:02:20Z">
           <reporter-output>
             <line>
               <![CDATA[succesfull login]]>
             </line>
           </reporter-output>
         </test-method> <!-- testSignInViaEmail -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2b80d80f]" name="afterTest" is-config="true" duration-ms="396" started-at="2016-04-01T23:51:50Z" finished-at="2016-04-01T23:51:50Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testsuites.TestSuiteA@2eee9593]" name="afterTest" is-config="true" duration-ms="502" started-at="2016-04-06T20:02:20Z" finished-at="2016-04-06T20:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.angloinfo.testsuites.TestSuiteA -->
-    </test> <!-- Regression1 -->
-  </suite> <!-- AutoTestSuite1 -->
+    </test> <!-- Regression2 -->
+  </suite> <!-- AutoTestSuite2 -->
 </testng-results>

@@ -1,10 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="AutoTestSuite1" verbose ="1">
 	<test name="Regression1">
-		<parameter name ="environment" value ="stg"/>
+	    <parameter name="environment" value ="stg"/>
 		<classes>
-			<class name ="com.angloinfo.testsuites.TestSuiteA"/>
-			
+			<class name ="com.angloinfo.testsuites.TestSuiteA">
+			<methods>
+       			 <include name="testRegisterUserViaApi"/>
+     		</methods>	
+     		</class>
 		</classes>
 	</test>
 </suite>

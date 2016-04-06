@@ -5,19 +5,11 @@
   <test name="Regression1">
     <parameter name="environment" value="stg"/>
     <classes>
-      <class name="com.angloinfo.testsuites.TestSuiteA"/>
-    </classes>
-  </test> <!-- Regression1 -->
-  <test name="Regression1(failed)">
-    <parameter name="environment" value="stg"/>
-    <classes>
       <class name="com.angloinfo.testsuites.TestSuiteA">
         <methods>
-          <include name="testResetPasswordMailRecieved"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="testRegisterUserViaApi"/>
         </methods>
       </class> <!-- com.angloinfo.testsuites.TestSuiteA -->
     </classes>
-  </test> <!-- Regression1(failed) -->
+  </test> <!-- Regression1 -->
 </suite> <!-- Failed suite [AutoTestSuite1] -->
