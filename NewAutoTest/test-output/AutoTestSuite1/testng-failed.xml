@@ -7,7 +7,7 @@
     <classes>
       <class name="com.angloinfo.testsuites.TestSuiteA">
         <methods>
-          <include name="testRegisterUserViaApi"/>
+          <include name="testRegionalMainNavigationLinks"/>
         </methods>
       </class> <!-- com.angloinfo.testsuites.TestSuiteA -->
     </classes>

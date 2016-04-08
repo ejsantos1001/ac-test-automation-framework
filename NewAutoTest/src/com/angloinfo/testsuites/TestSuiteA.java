@@ -17,10 +17,12 @@ import com.angloinfo.data.Member;
 import com.angloinfo.pageobjects.CMSDirectorySubSection;
 import com.angloinfo.pageobjects.CMSHeaderSection;
 import com.angloinfo.pageobjects.CMSLoginPage;
+import com.angloinfo.pageobjects.ClassifiedsListingPage;
 import com.angloinfo.pageobjects.FEForgotPasswordPage;
 import com.angloinfo.pageobjects.FEGlobalHomePage;
 import com.angloinfo.pageobjects.FELoginPage;
 import com.angloinfo.pageobjects.FELowerFooterSection;
+import com.angloinfo.pageobjects.FERegionalNavigationBar;
 import com.angloinfo.tools.WebDriverManager;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.angloinfo.tools.AuthManager;
@@ -52,7 +54,7 @@ public class TestSuiteA {
 	
 	
 	
-	@Test(dataProvider = "dp")
+	@Test(dataProvider = "dp",groups={"undercontruction"})
 	public void testAddingDirectoryViaCMS(DirectoryListing dl) {
 		
 		CMSLoginPage CMSLoginPage_i1 = new CMSLoginPage(driver);
@@ -143,7 +145,7 @@ public class TestSuiteA {
 	    };
 	  } 
 	  
-	@Test
+	@Test(groups={"undercontruction"})
 	public void testLowerFooterLinks() {
 		
 		FEGlobalHomePage FEGlobalHomePage_i1 = new FEGlobalHomePage(driver);
@@ -155,18 +157,37 @@ public class TestSuiteA {
 		FELowerFooterSection_i1.clickCookiesLink();	
 	}
 	
-	@Test
+	@Test(groups={"undercontruction"})
 	public void testEnquiryButton() {
-		FEGlobalHomePage FEGlobalHomePage_i1 = new FEGlobalHomePage(driver);
-		FEGlobalHomePage_i1.goToPage(febaseurl);
-		FEGlobalHomePage_i1.clickSignIn();
+		FEGlobalHomePage feGlobalHomePage = new FEGlobalHomePage(driver);
+		feGlobalHomePage.goToPage(febaseurl);
+		feGlobalHomePage.clickSignIn();
 		FELoginPage feLoginPage = new FELoginPage(driver);
 		feLoginPage.inputEmail("ainfo1001+7@gmail.com");
 		feLoginPage.inputPassword("Anglo123");
 		feLoginPage.clickLogin();
+		ClassifiedsListingPage classifiedsListingsPage = new ClassifiedsListingPage(driver);
+		classifiedsListingsPage.goToListing(febaseurl,"/zurich/classifieds/ad/zurich-classifiedstest21459256229");
+		classifiedsListingsPage.enquire("iam writing to enquire");
 		
 		
 		
+	}
+	
+	@Test(groups = {"undercontruction"} )
+	public void testRegionalMainNavigationLinks() {
+		FEGlobalHomePage feGlobalHomePage2 = new FEGlobalHomePage(driver);
+		feGlobalHomePage2.goToPage(febaseurl);
+		feGlobalHomePage2.clickSignIn();
+		FELoginPage feLoginPage2 = new FELoginPage(driver);
+		feLoginPage2.inputEmail("ainfo1001+7@gmail.com");
+		feLoginPage2.inputPassword("Anglo123");
+		feLoginPage2.clickLogin();
+		FERegionalNavigationBar feRegionalNavigationBar = new FERegionalNavigationBar(driver);
+		feRegionalNavigationBar.clickDirectoryLink();
+		feRegionalNavigationBar.clickClassifiedsLink();
+		feRegionalNavigationBar.clickDiscussionsLink();
+		feRegionalNavigationBar.clickEventsLink();
 	}
 
 

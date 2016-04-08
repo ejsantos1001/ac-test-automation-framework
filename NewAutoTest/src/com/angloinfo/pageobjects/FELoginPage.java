@@ -21,12 +21,12 @@ public class FELoginPage {
 	}
 	
 	public void inputEmail(String email) {
-		emailfield = driver.findElement(By.id("formEmail"));
+		emailfield = driver.findElement(By.xpath("//input[@id='formEmail']"));
 		emailfield.sendKeys(email);
 	}
 	
 	public void inputPassword(String password) {
-		passwordfield = driver.findElement(By.id("formPassword"));
+		passwordfield = driver.findElement(By.xpath("//input[@id='formPassword']"));
 		passwordfield.sendKeys(password);
 	}
 	
