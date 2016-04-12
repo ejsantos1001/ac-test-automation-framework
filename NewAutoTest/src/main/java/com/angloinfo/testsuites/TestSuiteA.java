@@ -24,7 +24,6 @@ import com.angloinfo.pageobjects.FELoginPage;
 import com.angloinfo.pageobjects.FELowerFooterSection;
 import com.angloinfo.pageobjects.FERegionalNavigationBar;
 import com.angloinfo.tools.WebDriverManager;
-import com.gargoylesoftware.htmlunit.WebClient;
 import com.angloinfo.tools.AuthManager;
 import com.angloinfo.tools.UrlManager;
 import com.angloinfo.tools.MailManager;
@@ -37,7 +36,7 @@ public class TestSuiteA {
 	 String accesstoken;
 	 String apibaseurl; 
 	 WebDriver driver;
-	 WebClient client;
+	
 	 WebDriverWait wait ;
 	
 	
