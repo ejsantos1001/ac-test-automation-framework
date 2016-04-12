@@ -1,3 +1,4 @@
+
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="AutoTestSuite2" verbose ="2">
 	<test name="Regression2">
@@ -15,3 +16,22 @@
 	</test>
 </suite>
 
+
+<!-- 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AutoTestSuite2" verbose ="2">
+	<test name="Regression2">
+	<parameter name="environment" value ="stg"/>
+		<groups>
+			<run>
+				<include name="fixing"/>
+			</run>
+		</groups>
+		
+
+		<classes>
+			<class name ="com.angloinfo.testsuites.TestSuiteA"/>			
+		</classes>
+	</test>
+</suite>
+ -->

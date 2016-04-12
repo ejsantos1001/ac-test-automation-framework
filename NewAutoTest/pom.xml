@@ -24,6 +24,18 @@
           </suiteXmlFiles>
         </configuration>
       </plugin>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.5</version>
+          <dependencies>
+            <dependency><!-- add support for ssh/scp -->
+              <groupId>org.apache.maven.wagon</groupId>
+              <artifactId>wagon-ssh</artifactId>
+              <version>1.0</version>
+            </dependency>
+          </dependencies>
+        </plugin>
     </plugins>
   </build>
   <dependencies>
@@ -50,8 +62,7 @@
 	<dependency>
   		<groupId>org.testng</groupId>
   		<artifactId>testng</artifactId>
-  		<version>6.9.10</version>
-  		
+  		<version>6.9.10</version>	
 	</dependency>
   </dependencies>
   <reporting>
@@ -63,4 +74,10 @@
       </plugin>
     </plugins>
   </reporting>
+    <distributionManagement>
+    	<repository>
+            <id>test-reporting-site</id>
+            <url>sftp://ejsantos@proto-07vi8k06.cloudapp.net:22/</url>
+        </repository>
+    </distributionManagement>
 </project>

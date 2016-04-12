@@ -173,7 +173,7 @@ public class TestSuiteA {
 		
 	}
 	
-	@Test(groups = {"undercontruction"} )
+	@Test(groups = {"undercontruction","fixing"} )
 	public void testRegionalMainNavigationLinks() {
 		FEGlobalHomePage feGlobalHomePage2 = new FEGlobalHomePage(driver);
 		feGlobalHomePage2.goToPage(febaseurl);
