@@ -1,37 +1,20 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="AutoTestSuite2" verbose ="2">
-	<test name="Regression2">
+<suite name="AutoTestSuite" verbose ="2">
+	<test name="Regression">
 	<parameter name="environment" value ="stg"/>
-		<groups>
+	<groups>
 			<run>
-				<exclude name="undercontruction"/>
+					<include name="fixing"/>		
 			</run>
-		</groups>
-		
-
-		<classes>
-			<class name ="com.angloinfo.testsuites.TestSuiteA"/>			
+	
+	</groups>
+	<classes>
+			<class name ="com.angloinfo.testsuites.TestSuite"/>			
 		</classes>
 	</test>
 </suite>
 
 
-<!-- 
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="AutoTestSuite2" verbose ="2">
-	<test name="Regression2">
-	<parameter name="environment" value ="stg"/>
-		<groups>
-			<run>
-				<include name="fixing"/>
-			</run>
-		</groups>
-		
 
-		<classes>
-			<class name ="com.angloinfo.testsuites.TestSuiteA"/>			
-		</classes>
-	</test>
-</suite>
- -->
+

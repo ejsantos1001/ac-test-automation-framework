@@ -24,6 +24,8 @@ public class CMSDirectorySubSection {
 	WebElement  contentfield1;
 	WebElement  savechangesbutton ;
 	WebElement  slugbutton;
+	WebElement  pageUrl;
+	String pageUrlText;
 	
 	
 
@@ -52,12 +54,20 @@ public class CMSDirectorySubSection {
 			this.directorynamefield = driver.findElement(By.xpath(".//*[@id='name']"));
 			this.directorynamefield.clear();
 			this.directorynamefield.sendKeys(dl.getName());
-			this.slugbutton = driver.findElement(By.xpath(".//*[@id='listing-detail-form']/div[2]/div/div[1]/span[2]/button"));
+			this.slugbutton = driver.findElement(By.xpath("//form[@id='listing-detail-form']/div[2]/div/div/span[2]/button"));
 			this.slugbutton.click();
 			this.contentfield1 = driver.findElement(By.xpath(".//*[@id='listing_html_editor']/div[2]/div[4]/div[4]"));
 			this.contentfield1.sendKeys(dl.getDescription());
 			this.savechangesbutton = driver.findElement(By.xpath(".//*[@id='ai-content']/div/div[1]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div[2]/center/button"));
 			this.savechangesbutton.click();
+			pageUrl = driver.findElement(By.xpath("//div[@id='ai-content']/div/div/div/div/div/div[2]/div/div/div/div/div[2]/div[2]/div/small[2]/a"));
+			pageUrlText= pageUrl.getAttribute("href");
+			
+			
+		}
+		
+		public String getDirectorypageUrlTest() {
+			return pageUrlText;
 		}
 	
 }

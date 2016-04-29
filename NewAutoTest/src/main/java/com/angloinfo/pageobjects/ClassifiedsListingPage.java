@@ -25,9 +25,10 @@ public class ClassifiedsListingPage {
 		public void enquire(String message) {
 			enquirebutton = driver.findElement(By.xpath("//a[contains(text(),'Enquire Now')]"));
 			enquirebutton.click();
-			messagebox = driver.findElement(By.xpath("messagebox"));
+			messagebox = driver.findElement(By.xpath("//textarea[@name='message']"));
 			messagebox.sendKeys(message);
 			sendbutton = driver.findElement(By.xpath("//button[@type='submit']"));
+			sendbutton.click();
 			
 		}
 		

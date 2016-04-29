@@ -36,7 +36,7 @@ public class MailManager {
 			
 			
 	 } 
-		public static boolean verifyEmailRecieved(String subject, String user,String password) {
+		public static boolean verifyEmailRecieved(String subject, String user,String password,long timeoutInSec) {
 		boolean success = false;
 		try {
 			Session emailSession = createIMAPEmailSession();
@@ -50,19 +50,40 @@ public class MailManager {
 			FlagTerm unseenFlagTerm = new FlagTerm(seen,false);
 			Message messages[] = emailfolder.search(unseenFlagTerm);
 			
+			
+			long startTime = System.nanoTime();
+			Long maxTimeout = new Long(timeoutInSec * 1000000000L);  //  1sec = 1000000000nsec
+			
+		
+			
+			
+			do {
+		
+		
 			if(messages.length == 0) {
 				System.out.println("no unread messages");
+				
+				
+			
+		
 			} else {
+				
+				
+								for(int i = 0;i< messages.length;i++ ) {
+												if(messages[i].getSubject().equals(subject))  {
+												System.out.println(messages[i].getSubject());
+												messages[i].setFlag(Flags.Flag.SEEN, true);
+												success = true;
+												
+												}
+								
+				    }
+		
+			}  
 			
-					for(int i = 0;i< messages.length;i++ ) {
-							if(messages[i].getSubject().equals(subject))  {
-								System.out.println(messages[i].getSubject());
-								messages[i].setFlag(Flags.Flag.SEEN, true);
-								success = true;
-							}
-					}
-			}
+			}while((System.nanoTime() - startTime) < maxTimeout && success != true) ;
 			
+		
 			emailfolder.close(true);
 			store.close();
 		

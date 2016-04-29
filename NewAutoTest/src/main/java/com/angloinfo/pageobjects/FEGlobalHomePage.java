@@ -15,7 +15,7 @@ public class FEGlobalHomePage {
 	}
 	
 	public void goToPage(String baseUrl) {
-		driver.get(baseUrl + "/");
+		driver.get(baseUrl);
 	}
 	
 	public void switchLocation() {

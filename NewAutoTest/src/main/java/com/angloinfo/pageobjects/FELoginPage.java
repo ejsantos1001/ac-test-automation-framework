@@ -36,6 +36,16 @@ public class FELoginPage {
 		
 	}
 	
+	public void login(String email,String password) {
+		emailfield = driver.findElement(By.xpath("//input[@id='formEmail']"));
+		emailfield.sendKeys(email);
+		passwordfield = driver.findElement(By.xpath("//input[@id='formPassword']"));
+		passwordfield.sendKeys(password);
+		loginbutton = driver.findElement(By.xpath("//button[@type='submit']"));
+		loginbutton.click();
+		
+	}
+	
 	public  String getCurrentUrl() {
 		return driver.getCurrentUrl();
 	}
