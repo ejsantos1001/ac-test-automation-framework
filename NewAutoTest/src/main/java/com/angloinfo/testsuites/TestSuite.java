@@ -89,12 +89,12 @@ public class TestSuite {
 
 	 
 	 @Test(groups={"working"})
-	 public void signIn(String username,String password) {
+	 public void signIn() {
 			
 		 	Reporter.log("given the user has a valid email");
 			FELoginPage LoginPage_i1 = new FELoginPage(driver);
 			LoginPage_i1.goToPage(febaseurl);
-			LoginPage_i1.login("ainfo1001+stg7@gmail.com", "Anglo123" );
+			LoginPage_i1.login("ainfo1001+stg101@gmail.com", "Anglo123" );
 			Assert.assertEquals(LoginPage_i1.getCurrentUrl(), febaseurl + "/member/dashboard");
 			Reporter.log("succesfull login");
 			

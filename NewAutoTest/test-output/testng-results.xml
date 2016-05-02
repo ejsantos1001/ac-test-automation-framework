@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="6" passed="5">
   <reporter-output>
+    <line>
+      <![CDATA[given the user has a valid email]]>
+    </line>
+    <line>
+      <![CDATA[succesfull login]]>
+    </line>
   </reporter-output>
-  <suite name="AutoTestSuite" duration-ms="52423" started-at="2016-04-29T11:13:56Z" finished-at="2016-04-29T11:14:49Z">
+  <suite name="AutoTestSuite" duration-ms="225390" started-at="2016-05-02T13:23:29Z" finished-at="2016-05-02T13:27:14Z">
     <groups>
-      <group name="fixing">
+      <group name="working">
+        <method signature="TestSuite.receiveResetPasswordEmail()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="receiveResetPasswordEmail" class="com.angloinfo.testsuites.TestSuite"/>
+        <method signature="TestSuite.recieveListingEnquiryEmail()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="recieveListingEnquiryEmail" class="com.angloinfo.testsuites.TestSuite"/>
+        <method signature="TestSuite.regsiterUserViaAPI(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="regsiterUserViaAPI" class="com.angloinfo.testsuites.TestSuite"/>
+        <method signature="TestSuite.signIn()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="signIn" class="com.angloinfo.testsuites.TestSuite"/>
+        <method signature="TestSuite.switchRegionViaLocationSwitcher()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="switchRegionViaLocationSwitcher" class="com.angloinfo.testsuites.TestSuite"/>
         <method signature="TestSuite.updateProfileName(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="updateProfileName" class="com.angloinfo.testsuites.TestSuite"/>
-      </group> <!-- fixing -->
+      </group> <!-- working -->
     </groups>
-    <test name="Regression" duration-ms="52423" started-at="2016-04-29T11:13:56Z" finished-at="2016-04-29T11:14:49Z">
+    <test name="Regression" duration-ms="225390" started-at="2016-05-02T13:23:29Z" finished-at="2016-05-02T13:27:14Z">
       <class name="com.angloinfo.testsuites.TestSuite">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="beforeTest" is-config="true" duration-ms="17187" started-at="2016-04-29T19:13:56Z" finished-at="2016-04-29T19:14:13Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="beforeTest" is-config="true" duration-ms="9912" started-at="2016-05-02T21:23:29Z" finished-at="2016-05-02T21:23:39Z">
           <params>
             <param index="0">
               <value>
@@ -21,34 +32,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="updateProfileName(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="updateProfileName" duration-ms="34959" started-at="2016-04-29T19:14:13Z" data-provider="dp3" finished-at="2016-04-29T19:14:48Z">
+        <test-method status="PASS" signature="receiveResetPasswordEmail()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="receiveResetPasswordEmail" duration-ms="50563" started-at="2016-05-02T21:23:39Z" finished-at="2016-05-02T21:24:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- receiveResetPasswordEmail -->
+        <test-method status="PASS" signature="recieveListingEnquiryEmail()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="recieveListingEnquiryEmail" duration-ms="61408" started-at="2016-05-02T21:24:30Z" finished-at="2016-05-02T21:25:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recieveListingEnquiryEmail -->
+        <test-method status="PASS" signature="regsiterUserViaAPI(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="regsiterUserViaAPI" duration-ms="24481" started-at="2016-05-02T21:25:31Z" data-provider="dp2" finished-at="2016-05-02T21:25:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.angloinfo.data.Member@67ec8477]]>
+                <![CDATA[com.angloinfo.data.Member@49dbaaf3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regsiterUserViaAPI -->
+        <test-method status="PASS" signature="signIn()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="signIn" duration-ms="22170" started-at="2016-05-02T21:25:56Z" finished-at="2016-05-02T21:26:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[given the user has a valid email]]>
+            </line>
+            <line>
+              <![CDATA[succesfull login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="switchRegionViaLocationSwitcher()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="switchRegionViaLocationSwitcher" duration-ms="13585" started-at="2016-05-02T21:26:18Z" finished-at="2016-05-02T21:26:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchRegionViaLocationSwitcher -->
+        <test-method status="FAIL" signature="updateProfileName(com.angloinfo.data.Member)[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="updateProfileName" duration-ms="42683" started-at="2016-05-02T21:26:31Z" data-provider="dp3" finished-at="2016-05-02T21:27:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.angloinfo.data.Member@52b6319f]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
               <![CDATA[Element not found in the cache - perhaps the page has changed since it was looked up
-Command duration or timeout: 19 milliseconds
+Command duration or timeout: 17 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'EJs-Mac-mini.local', ip: '192.168.1.11', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+System info: host: 'EJs-Mac-mini.local', ip: '192.168.1.13', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 87a7637a-02fe-2140-b85b-97c058fadcd2]]>
+Session ID: fef00071-7149-b742-9b21-b39cfd8a19ab]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
-Command duration or timeout: 19 milliseconds
+Command duration or timeout: 17 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'EJs-Mac-mini.local', ip: '192.168.1.11', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+System info: host: 'EJs-Mac-mini.local', ip: '192.168.1.13', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=MAC, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 87a7637a-02fe-2140-b85b-97c058fadcd2
+Session ID: fef00071-7149-b742-9b21-b39cfd8a19ab
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -87,21 +131,21 @@ Session ID: 87a7637a-02fe-2140-b85b-97c058fadcd2
 Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'EJs-Mac-mini.local', ip: '192.168.1.11', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
+System info: host: 'EJs-Mac-mini.local', ip: '192.168.1.13', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11.4', java.version: '1.8.0_77'
 Driver info: driver.version: unknown
 	at <anonymous class>.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
-	at <anonymous class>.Utils.getElementAt(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous1950456426431488295webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
-	at <anonymous class>.WebElement.getElementText(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous1950456426431488295webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12092)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous1950456426431488295webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous1950456426431488295webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous1950456426431488295webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+	at <anonymous class>.Utils.getElementAt(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous5337974709307583527webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
+	at <anonymous class>.WebElement.getElementText(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous5337974709307583527webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12092)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous5337974709307583527webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous5337974709307583527webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///var/folders/vp/4h06yhpx40l0g6pwybwck5300000gn/T/anonymous5337974709307583527webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateProfileName -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="afterTest" is-config="true" duration-ms="212" started-at="2016-04-29T19:14:48Z" finished-at="2016-04-29T19:14:49Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.angloinfo.testsuites.TestSuite@5e5792a0]" name="afterTest" is-config="true" duration-ms="227" started-at="2016-05-02T21:27:14Z" finished-at="2016-05-02T21:27:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

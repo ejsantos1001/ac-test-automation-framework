@@ -5,7 +5,7 @@
 	<parameter name="environment" value ="stg"/>
 	<groups>
 			<run>
-					<include name="fixing"/>		
+					<include name="working"/>		
 			</run>
 	
 	</groups>
